@@ -1578,35 +1578,35 @@ legend {
 
 @font-face {
   font-family: "notosans";
-  src: url("../fonts/notosans-regular.woff") format("woff");
+  src: url("../fonts/notosans-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "notosans";
-  src: url("../fonts/notosans-medium.woff") format("woff");
+  src: url("../fonts/notosans-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "notosans";
-  src: url("../fonts/notosans-semibold.woff") format("woff");
+  src: url("../fonts/notosans-semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "notosans";
-  src: url("../fonts/notosans-bold.woff") format("woff");
+  src: url("../fonts/notosans-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "notosans";
-  src: url("../fonts/notosans-black.woff") format("woff");
+  src: url("../fonts/notosans-black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
 }
