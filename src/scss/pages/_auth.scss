@@ -1,0 +1,59 @@
+.auth {
+  padding-bottom: 48px;
+  
+  @include media(sm) {
+    padding-bottom: 16px;
+  }
+
+  &__main {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto 24px;
+
+    @include media(md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__img {
+    max-width: 288px;
+    margin: 0 auto 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include media(sm) {
+      gap: 10px;
+    }
+
+    &-tip {
+      text-align: center;
+      color: var(--color-alt);
+      font-size: 14px;
+
+      @include media(sm) {
+        font-size: 12px;
+      }
+
+      a {
+        color: var(--color-blue);
+      }
+    }
+  }
+
+  &__desc {
+    padding: 16px 0;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include media(sm) {
+      font-size: 14px;
+      padding: 10px 0;
+      margin-bottom: 8px;
+    }
+  }
+
+}

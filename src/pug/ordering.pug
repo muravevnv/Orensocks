@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Оформление и оплата заказа')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Оформление и оплата заказа'])
+      +heading('Оформление и оплата заказа')
+      include blocks/ordering/ordering
+
+    include components/footer
+    include includes/scripts

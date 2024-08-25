@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('О нас')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'О нас'])
+      +heading('О нас')
+      include blocks/about/about
+    include components/footer
+    include includes/scripts

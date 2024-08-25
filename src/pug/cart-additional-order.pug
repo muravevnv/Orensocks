@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Дозаказ')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Корзина',  'Дозаказ к заказу'], 'Главная')
+      include blocks/cart/cart-additional-order
+
+    include components/footer
+    include includes/scripts

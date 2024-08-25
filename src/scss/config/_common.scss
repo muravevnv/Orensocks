@@ -1,0 +1,207 @@
+.section {
+  padding: 48px 0;
+
+  @include media(sm) {
+    padding: 24px 0;
+  }
+
+  + .section {
+    padding-top: 0;
+  }
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &__title {
+    margin: 0 0 24px 0;
+
+    @include media(md) {
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+.stickers {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1px;
+  gap: 2px;
+  background-color: var(--color-border);
+  border-radius: 4px;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.sticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--color-red);
+  text-align: center;
+  font-size: 10px;
+  line-height: 1;
+  padding: 4px 6px;
+  gap: 8px;
+  color: var(--color-whte);
+
+  &--blue {
+    background-color: var(--color-blue);
+  }
+}
+
+.slider-control {
+  --size: 30px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-whte);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px 0px #0000000D;
+  transition: var(--transition);
+
+  @include media(hover) {
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 10px ;
+}
+
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  opacity: 1;
+  background-color: var(--color-border);
+
+  &-active {
+    background-color: var(--color-blck);
+  }
+}
+
+
+.heading {
+  margin: 24px 0;
+  font-weight: 900;
+
+  @include media(md) {
+    margin: 16px 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0;
+
+  &__control {
+    --size: 36px;
+    padding: 7px 11px;
+    min-width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: var(--transition);
+
+    &.is-selected {
+      background-color: var(--color-primary);
+    }
+
+    @include media(hover) {
+      &:hover {
+        background-color: var(--color-primary-hovered);
+      }
+    }
+  }
+}
+
+
+.label {
+  input {
+    position: fixed;
+    transform: scale(0);
+
+    &:checked + label {
+      background-color: var(--color-alt);
+      color: var(--color-whte);
+    }
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 5px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-whte);
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
+.label-color {
+  input {
+    position: fixed;
+    transform: scale(0);
+
+    &:checked + label {
+      border: 5px solid var(--color-primary-darken);
+    }
+  }
+
+  label {
+    --size: 36px;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background: var(--label-color);
+  }
+}
+
+.list {
+  li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 16px;
+
+    @include media(sm) {
+      font-size: 14px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+
+    &::before {
+      --size: 8px;
+      width: var(--size);
+      height: var(--size);
+      content: '';
+      border-radius: 50%;
+      background-color: currentColor;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+  }
+}

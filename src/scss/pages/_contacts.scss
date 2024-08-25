@@ -1,0 +1,75 @@
+.contacts-person {
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @include media(sm) {
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+
+    &-title {
+      font-size: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      
+      @include media(sm) {
+        font-size: 18px;
+      }
+    }
+
+    &-desc {
+
+      @include media(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.contacts-location {
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @include media(sm) {
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+
+    &-title {
+      font-size: 24px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      font-weight: 600;
+      min-height: 56px;
+
+      @include media(sm) {
+        font-size: 18px;
+        min-height: initial;
+      }
+    }
+
+    &-map {
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    &-adress {
+      @include media(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+}

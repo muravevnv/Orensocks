@@ -1,0 +1,19 @@
+mixin svg(width, height, id)
+  svg(width= width, height= height)
+    use(xlink:href=`img/icons/icons.svg#${id}`)
+
+mixin heading(title)
+  .heading 
+    .container 
+      h1.heading__title.h1= title
+
+mixin breadcrumbs(links, link)
+  .breadcrumbs
+    .container
+      ul.breadcrumbs__list 
+        for item in links
+          li.breadcrumbs__item 
+            a(href="#")= item
+      a(href="#").breadcrumbs__mobile-link 
+        +svg(16, 16, 'arrow-link-left')
+        span= link

@@ -1,0 +1,20 @@
+section.hero.section
+  .container 
+    .hero__main
+      .hero-item.hero-item--summer
+        picture.hero-item__bg 
+          source(srcset="./img/hero/season-01.webp" type="image/webp")
+          img(src="./img/hero/season-01.jpg", alt="")
+        .hero-item__title весна - лето
+        .hero-item__links.js-hero-links-slider 
+          .swiper-wrapper
+            a.hero-item__link.swiper-slide(href="#") Мужские летние носки 
+            a.hero-item__link.swiper-slide(href="#") Детские спортивные футболки
+            a.hero-item__link.swiper-slide(href="#") Женские летние носки
+            a.hero-item__link.swiper-slide(href="#") Детские спортивные носки
+            a.hero-item__link.swiper-slide(href="#") Белые носки
+      button.hero-slider-prev.slider-control.js-hero-links-slider-prev
+        +svg(24, 24, 'arrow-left')
+      button.hero-slider-next.slider-control.js-hero-links-slider-next
+        +svg(24, 24, 'arrow-right')
+        

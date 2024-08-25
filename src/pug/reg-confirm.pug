@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Подтверждение регистрации')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Регистрация', 'Подтверждениe'], 'Главная')
+      section.auth 
+        .container 
+          h1.heading.auth__title.h1 Подтверждение регистрации
+          .auth__main 
+            .auth__img 
+              img(src="./img/auth/reg.svg", alt="")
+            form.auth__form(action="#") 
+              .form-notification 
+                .form-notification__text Неверный код подтверждения
+                button(type="button").form-notification__close
+                  +svg(24, 24, 'close')
+              .form-group 
+                span.form-error
+                input.form-control(type="text" placeholder="Код подтверждения *") 
+                label.form-label(for="#") 
+                  +svg(16, 16, 'key')
+                  span Введите код подтверждения из письма,  отправленного на y***@rekora.ru
+              .form-submit 
+                button(type="submit" disabled).form-btn.btn.btn--wide.btn--blck Продолжить
+                .form-submit__tip 
+                  | Вы можете запросить код еще раз через 
+                  span.form-submit__tip-timer 09:49 
+                  button(type="button").form-submit__tip-link Не приходит код?
+              .auth__form-tip Уже зарегистрированы? 
+                a(href="#") Войти
+
+    include components/footer
+    include includes/scripts

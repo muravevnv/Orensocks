@@ -1,0 +1,37 @@
+.popup.popup--sm(id="modal-status-select" data-modal)
+  .popup__overlay 
+  .popup__wrapper
+    .popup__inner 
+      .popup__content 
+        button(type="button" data-modal-close).popup__close
+          +svg(24, 24, 'close')
+        .popup__title Выберите статус заказа
+        .status-select 
+          .form-radio
+            input(type="radio", name="status" id="status_01" checked)
+            label(for="status_01")
+              span Все
+          .form-radio
+            input(type="radio", name="status" id="status_02")
+            label(for="status_02") 
+              span Новый
+          .form-radio
+            input(type="radio", name="status" id="status_03")
+            label(for="status_03") 
+              span Принят к оплате
+          .form-radio
+            input(type="radio", name="status" id="status_04")
+            label(for="status_04") 
+              span Оплачен
+          .form-radio
+            input(type="radio", name="status" id="status_05")
+            label(for="status_05") 
+              span Отправлен
+          .form-radio
+            input(type="radio", name="status" id="status_06")
+            label(for="status_06") 
+              span Выполнен
+          .form-radio
+            input(type="radio", name="status" id="status_07")
+            label(for="status_07") 
+              span Отменён

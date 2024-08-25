@@ -1,0 +1,73 @@
+.region-mobile(data-modal id="modal-region-mob")
+  .region-mobile__head(data-modal-close)
+    +svg(24, 24, 'arrow-link-left')
+    span Выберите ваше <br> местоположение
+  .region-mobile__search 
+    .searchbar.js-search 
+      .searchbar__panel 
+        input(type="text" placeholder="Поиск города или региона").js-search-input.searchbar__input.form-control 
+        button(type="button").searchbar__clear.js-search-clear
+          +svg(24, 24, 'close')
+        span.searchbar__icon 
+          +svg(24, 24, 'search')
+    .searchbar__result-list 
+      .searchbar__result-region-item 
+        .searchbar__result-region-item-city Алапаевск
+        .searchbar__result-region-item-area Свердловская область
+  .region-mobile__list.js-search-result 
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Алтайский край
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list.js-accordeon-body 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Амурская область
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list.js-accordeon-body 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Архангельская область
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list.js-accordeon-body 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Астраханская область
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Белгородская область
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list.js-accordeon-body 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Брянская область
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list.js-accordeon-body 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский
+    .region-mobile__section.js-accordeon 
+      .region-mobile__section-head.js-accordeon-toggle
+        span Владимирская область
+        +svg(24, 24, 'arrow-down')
+      .region-mobile__section-list.js-accordeon-body 
+        .region-mobile__section-item Барнаул
+        .region-mobile__section-item Бийск
+        .region-mobile__section-item ЗАТО Сибирский

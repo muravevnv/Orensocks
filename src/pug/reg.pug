@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Регистрация')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Регистрация'], 'Главная')
+      section.auth 
+        .container 
+          h1.heading.auth__title.h1 Регистрация
+          .auth__main 
+            .auth__img 
+              img(src="./img/auth/reg.svg", alt="")
+            form.auth__form(action="#") 
+              .form-notification 
+                .form-notification__text Укажите корректный Email
+                button(type="button").form-notification__close
+                  +svg(24, 24, 'close')
+              .form-group 
+                span.form-error
+                input.form-control(type="text" placeholder="Email *") 
+                label.form-label(for="#") 
+                  +svg(16, 16, 'mail-convert')
+                  span На указанный Email придёт письмо с паролем и кодом подтверждения.
+              .form-group 
+                span.form-error
+                input.form-control(type="password" placeholder="Пароль") 
+                label.form-label(for="#") 
+                  +svg(16, 16, 'lock')
+                  span Вы можете указать свой пароль, или оставить это поле пустым и тогда он будет сгенерирован автоматически.
+              button(type="submit").form-btn.btn.btn--wide.btn--blck Продолжить
+              .auth__form-tip Уже зарегистрированы? 
+                a(href="#") Войти
+
+    include components/footer
+    include includes/scripts

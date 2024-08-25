@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Каталог</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header__inner"> 
+        <div class="container"> 
+          <div class="header__top"> 
+            <button class="header__region" type="button" data-modal-target="modal-region"> <span class="header__region-city">Екатеринбург</span><span class="header__region-icon"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+                    </svg></span></button>
+            <div class="header__menu js-menu">
+              <nav class="header__nav">
+                <ul class="header__nav-list"> 
+                  <li class="header__nav-item"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#orensocks"></use>
+                        </svg><a href="#">О нас</a>
+                  </li>
+                  <li class="header__nav-item"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#payment"></use>
+                        </svg><a href="#">Заказ и оплата</a>
+                  </li>
+                  <li class="header__nav-item">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#deliver"></use>
+                        </svg><a href="#">Доставка</a>
+                  </li>
+                  <li class="header__nav-item"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#comments"></use>
+                        </svg><a href="#">Отзывы</a>
+                  </li>
+                  <li class="header__nav-item"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#location"></use>
+                        </svg><a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="header__menu-region" type="button" data-modal-target="modal-region-mob"> <span>Екатеринбург</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#arrow-triangle"></use>
+                    </svg>
+              </button>
+            </div>
+            <div class="header__phone"> 
+              <div class="header__phone-item"><a class="header__phone-num" href="tel:+78005504998"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#tel"></use>
+                      </svg><span>8 800 550 49 98</span></a>
+                <div class="header__phone-icon js-handler" data-id="tel"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+                      </svg>
+                </div>
+              </div>
+              <div class="header__phone-list js-handler-content" data-id="tel"><a class="header__phone-num" href="#"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                      </svg><span>+7  905 885 32 73 </span></a><a class="header__phone-num" href="mailto:orensocks@yandex.ru"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#mail"></use>
+                      </svg><span>orensocks@yandex.ru</span></a><a class="header__phone-num" href="#"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#tel"></use>
+                      </svg><span>Чат-бот Telegram</span></a></div>
+            </div>
+          </div>
+          <div class="header__bottom"> <a class="header__logo" href="#"><img src="./img/logo.svg" alt=""></a>
+            <div class="header__catalog">
+              <button class="header__catalog-btn js-catalog-menu-btn" type="button">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#catalog"></use>
+                    </svg><span>Каталог</span>
+              </button>
+              <div class="catalog-menu js-catalog-menu"> 
+                <div class="catalog-menu__panel"> 
+                  <div class="catalog-menu__back js-catalog-menu-back">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-link-left"></use>
+                        </svg>
+                  </div>
+                  <div class="catalog-menu__search searchbar"> 
+                    <div class="searchbar js-search">
+                      <div class="searchbar__panel"> 
+                        <input class="searchbar__input form-control js-search-input" type="text" placeholder="Поиск города или региона">
+                        <button class="searchbar__clear searchbar__clear--with-btn js-search-clear" type="button">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#close"></use>
+                              </svg>
+                        </button><span class="searchbar__icon"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#search"></use>
+                              </svg></span>
+                        <button class="searchbar__btn" type="button">Найти</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="catalog-menu__close js-catalog-menu-close">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                  </button>
+                </div>
+                <div class="catalog-menu__inner">
+                  <div class="catalog-menu__nav"> 
+                    <div class="catalog-menu__nav-list">
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="1"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#star"></use>
+                            </svg><span>Новинки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="2"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-man"></use>
+                            </svg><span>Мужские носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="3"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#gift-box"></use>
+                            </svg><span>Носки в подарочной упаковке</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="4"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-medical"></use>
+                            </svg><span>Медицинские носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="5"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-woman"></use>
+                            </svg><span>Женские носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="6"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-teens"></use>
+                            </svg><span>Подростковые носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="7"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-kids"></use>
+                            </svg><span>Детские носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="8"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-winter"></use>
+                            </svg><span>Носки зимние</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="9"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-colors"></use>
+                            </svg><span>Цветные носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="10"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-white"></use>
+                            </svg><span>Белые носки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item" data-id="11"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-sledochki"></use>
+                            </svg><span>Носки-тапочки</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="12"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#briefcase"></use>
+                            </svg><span>Всё для школы</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="13"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#leggins-w"></use>
+                            </svg><span>Колготки детские</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="14"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#leggins"></use>
+                            </svg><span>БАНДАЛЕТКИ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="15"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#camisole"></use>
+                            </svg><span>ЛЕГИНСЫ, ТОПЫ ДЛЯ ФИТНЕСА</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="16"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#colgotki"></use>
+                            </svg><span>ГОЛЬФЫ, ЧУЛКИ, КОЛГОТКИ Х/Б</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#pregnant"></use>
+                            </svg><span>КОЛГОТКИ, ЛОСИНЫ ДЛЯ БЕРЕМЕННЫХ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#shirt"></use>
+                            </svg><span>ТУРЦИЯ NICOLETTA (НИКОЛЕТТА)</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#shirt"></use>
+                            </svg><span>BAYKAR БЕЛЬЁ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#shirt"></use>
+                            </svg><span>DONELLA БЕЛЬЕ ТУРЦИЯ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#under-kids"></use>
+                            </svg><span>ТРУСЫ ДЕТСКИЕ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#under-womans"></use>
+                            </svg><span>Женские трусы</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#under-mans"></use>
+                            </svg><span>Мужские трусы</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#knit-kids"></use>
+                            </svg><span>Трикотаж детский</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#knit-woman"></use>
+                            </svg><span>Трикотаж женский</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#knit-man"></use>
+                            </svg><span>Трикотаж мужскиой</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#mitt"></use>
+                            </svg><span>ПЕРЧАТКИ И ВАРЕЖКИ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#gloves"></use>
+                            </svg><span>ПЕРЧАТКИ РАБОЧИЕ</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#belt"></use>
+                            </svg><span>Пояса, наколенники</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item js-catalog-menu-item" data-id="17"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#socks-new-year"></use>
+                            </svg><span>НОВОГОДНИЕ НОСКИ!</span>
+                        <div class="catalog-menu__item-arrow"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                              </svg>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__regions"> 
+                        <div class="catalog-menu__item js-catalog-menu-item" data-id="18"> <span>РОССИЯ</span>
+                          <div class="catalog-menu__item-arrow"> 
+                                <svg width="24" height="24">
+                                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-menu__item js-catalog-menu-item" data-id="19"> <span>КИТАЙ</span>
+                          <div class="catalog-menu__item-arrow"> 
+                                <svg width="24" height="24">
+                                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-menu__item js-catalog-menu-item" data-id="20"> <span>БЕЛАРУСЬ</span>
+                          <div class="catalog-menu__item-arrow"> 
+                                <svg width="24" height="24">
+                                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-menu__item js-catalog-menu-item" data-id="21"> <span>СЕРБИЯ</span>
+                          <div class="catalog-menu__item-arrow"> 
+                                <svg width="24" height="24">
+                                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-menu__item js-catalog-menu-item" data-id="22"> <span>ТУРЦИЯ</span>
+                          <div class="catalog-menu__item-arrow"> 
+                                <svg width="24" height="24">
+                                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-menu__item js-catalog-menu-item" data-id="23"> <span>УЗБЕКИСТАН</span>
+                          <div class="catalog-menu__item-arrow"> 
+                                <svg width="24" height="24">
+                                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-menu__content"> 
+                    <div class="catalog-menu__section js-catalog-section" data-section="1"> 
+                      <div class="catalog-menu__section-head js-catalog-section-back"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#arrow-link-left"></use>
+                            </svg><span>Новинки</span>
+                      </div>
+                      <div class="catalog-menu__section-list"><a class="catalog-menu__new-item" href="#"> 
+                          <picture class="catalog-menu__new-item-img"> 
+                            <source srcset="./img/catalog/preview-01.webp" type="image/webp"><img src="./img/catalog/preview-01.jpg" alt="">
+                          </picture>
+                          <div class="catalog-menu__new-item-info">ДЕТСКИЕ КОЛГОТКИ НА ДЕВОЧКУ ХЛОПОК, КАЧЕСТВО ПРОСТО СУПЕР!!! TURKAN T041</div></a><a class="catalog-menu__new-item" href="#"> 
+                          <picture class="catalog-menu__new-item-img"> 
+                            <source srcset="./img/catalog/preview-02.webp" type="image/webp"><img src="./img/catalog/preview-02.jpg" alt="">
+                          </picture>
+                          <div class="catalog-menu__new-item-info">ДЕТСКИЕ КОЛГОТКИ БЕБИКИ НА ДЕВОЧКУ ХЛОПОК, КАЧЕСТВО ПРОСТО СУПЕР!!! TURKAN T025</div></a><a class="catalog-menu__new-item" href="#"> 
+                          <picture class="catalog-menu__new-item-img"> 
+                            <source srcset="./img/catalog/preview-03.webp" type="image/webp"><img src="./img/catalog/preview-03.jpg" alt="">
+                          </picture>
+                          <div class="catalog-menu__new-item-info">ДЕТСКИЕ КОЛГОТКИ НА ДЕВОЧКУ ХЛОПОК, КАЧЕСТВО ПРОСТО СУПЕР!!! TURKAN T016</div></a></div><a class="catalog-menu__section-all btn btn--outline btn--wide" href="#">Смотреть все товары категории </a>
+                    </div>
+                    <div class="catalog-menu__section js-catalog-section" data-section="2">
+                      <div class="catalog-menu__section-head js-catalog-section-back"> 
+                            <svg width="24" height="24">
+                              <use xlink:href="img/icons/icons.svg#arrow-link-left"></use>
+                            </svg><span>Мужские носки</span>
+                      </div>
+                      <div class="catalog-menu__section-list"><a class="catalog-menu__section-link" href="#">Летние носки</a><a class="catalog-menu__section-link" href="#">Носки черные</a><a class="catalog-menu__section-link" href="#">носки сетка</a><a class="catalog-menu__section-link" href="#">Носки белые</a><a class="catalog-menu__section-link" href="#">Спортивные носки</a><a class="catalog-menu__section-link" href="#">Укороченные носки</a><a class="catalog-menu__section-link" href="#">Следки на силиконе</a><a class="catalog-menu__section-link" href="#">Дизайнерские носки</a></div><a class="catalog-menu__section-all btn btn--outline btn--wide" href="#">Смотреть все товары категории </a>
+                    </div>
+                  </div>
+                  <div class="catalog-menu__banner"> 
+                    <div class="banner banner--md banner--blue">
+                      <div class="banner__inner">Приглашаем оптовиков и организаторов для совместных закупок!</div>
+                      <picture class="banner__img"> 
+                        <source src="./img/banners/bags-02.png" type="image/png">
+                        <source src="./img/banners/bags-02.webp" type="image/webp"><img src="./img/banners/bags-02.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-menu__search-result">
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg></span><span>ДЕТСКИЕ ТРУСЫ НА ДЕВОЧКУ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТД-17</span></a></div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg></span><span>ДЕТСКИЕ ТРУСЫ НА ДЕВОЧКУ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТД-17</span></a></div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg></span><span>ДЕТСКИЕ ТРУСЫ НА МАЛЬЧИКА ХЛОПОК 100% РОССИЯ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТМ-27</span></a></div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#timer"></use>
+                            </svg></span><span>ТРУСЫ МУЖСКИЕ</span></a>
+                    <button class="search-result-item__remove" type="button">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#close"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#timer"></use>
+                            </svg></span><span>ТРУСЫ МУЖСКИЕ</span></a>
+                    <button class="search-result-item__remove" type="button">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#close"></use>
+                          </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__search js-search">
+              <form class="header__search-form" action=""> 
+                <div class="header__search-row">
+                  <input class="header__search-input js-search-input" type="text" placeholder="Название или артикул">
+                  <button class="header__search-clear js-search-clear" type="button"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                  </button><span class="header__search-icon"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#search"></use>
+                        </svg></span>
+                  <button class="header__search-btn" type="button">Найти</button>
+                </div>
+                <div class="header__search-result js-search-result">
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg></span><span>ДЕТСКИЕ ТРУСЫ НА ДЕВОЧКУ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТД-17</span></a></div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg></span><span>ДЕТСКИЕ ТРУСЫ НА ДЕВОЧКУ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТД-17</span></a></div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg></span><span>ДЕТСКИЕ ТРУСЫ НА МАЛЬЧИКА ХЛОПОК 100% РОССИЯ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТМ-27</span></a></div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#timer"></use>
+                            </svg></span><span>ТРУСЫ МУЖСКИЕ</span></a>
+                    <button class="search-result-item__remove" type="button">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#close"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="search-result-item"><a class="search-result-item__link" href="#"><span class="search-result-item__icon">
+                            <svg width="16" height="16">
+                              <use xlink:href="img/icons/icons.svg#timer"></use>
+                            </svg></span><span>ТРУСЫ МУЖСКИЕ</span></a>
+                    <button class="search-result-item__remove" type="button">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#close"></use>
+                          </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="header-toolbar">
+              <div class="header-toolbar__item"> 
+                <div class="header-toolbar__item-btn js-handler" data-id="h-cabinet"> 
+                      <svg width="36" height="36">
+                        <use xlink:href="img/icons/icons.svg#user"></use>
+                      </svg><span>Войти</span>
+                </div>
+                <div class="header-toolbar-popup js-handler-content" data-id="h-cabinet"> 
+                  <div class="header-toolbar-popup__overlay"> </div>
+                  <div class="header-toolbar-popup__content"> 
+                    <button class="header-toolbar-popup__close js-handler-close" data-id="h-cabinet">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#close"></use>
+                          </svg>
+                    </button>
+                    <div class="header-auth"> 
+                      <div class="header-auth__title">Войти в Личный Кабинет</div>
+                      <div class="header-auth__controls"> <a class="header-auth__btn btn btn--wide btn--blck" href="#">Авторизация</a><a class="header-auth__btn btn btn--wide btn--whte" href="#">Зарегистрироваться</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-toolbar__item"> 
+                <div class="header-toolbar__item-btn js-handler" data-id="h-basket"> 
+                      <svg width="36" height="36">
+                        <use xlink:href="img/icons/icons.svg#basket"></use>
+                      </svg><span>Корзина</span><span class="header-toolbar__item-counter">10</span>
+                </div>
+                <div class="header-toolbar-popup js-handler-content" data-id="h-basket"> 
+                  <div class="header-toolbar-popup__overlay"> </div>
+                  <div class="header-toolbar-popup__content header-basket"> 
+                    <button class="header-toolbar-popup__close js-handler-close" data-id="h-basket">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#close"></use>
+                          </svg>
+                    </button>
+                    <div class="header-basket__title">В вашей корзине:</div>
+                    <div class="header-basket__row header-basket__amoun"> 
+                      <div class="header-basket__row-title">Товаров</div>
+                      <div class="header-basket__row-info">10 шт.</div>
+                    </div>
+                    <div class="header-basket__row header-basket__price"> 
+                      <div class="header-basket__row-title">На сумму</div>
+                      <div class="header-basket__row-info"><b>140.24</b> ₽</div>
+                    </div>
+                    <div class="header-basket__row header-basket__min">
+                      <div class="header-basket__row-title">Минимальная <br> сумма заказа</div>
+                      <div class="header-basket__row-info">от <b>3 000</b> ₽ </div>
+                    </div><a class="header-basket__btn btn btn--blck btn--wide">Перейти в корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="header__burger js-menu-btn"><span> </span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+          <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"> <a href="#">Контакты</a></li>
+                <li class="breadcrumbs__item"> <a href="#">Носки в подарочной упаковке</a></li>
+                <li class="breadcrumbs__item"> <a href="#">Мужские носки</a></li>
+              </ul><a class="breadcrumbs__mobile-link" href="#"> 
+                    <svg width="16" height="16">
+                      <use xlink:href="img/icons/icons.svg#arrow-link-left"></use>
+                    </svg><span>Каталог</span></a>
+            </div>
+          </div>
+          <div class="heading"> 
+            <div class="container"> 
+              <h1 class="heading__title h1">Носки в подарочной упаковке</h1>
+            </div>
+          </div>
+      <section class="catalog js-catalog"> 
+        <div class="container">
+          <div class="catalog__categories"> 
+            <div class="catalog__categories-panel">
+              <button class="catalog__categories-control catalog__categories-prev slider-control js-categories-slider-prev">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                    </svg>
+              </button>
+              <div class="catalog__categories-list js-categories-slider">
+                <div class="swiper-wrapper"> <a class="catalog__categories-item swiper-slide" href="#">Мужские носки</a><a class="catalog__categories-item swiper-slide" href="#">Женские носки</a><a class="catalog__categories-item swiper-slide" href="#">Подростковые носки</a><a class="catalog__categories-item swiper-slide" href="#">Зимние носки</a><a class="catalog__categories-item swiper-slide" href="#">Спортивные носки</a><a class="catalog__categories-item swiper-slide" href="#">Носки сетка</a><a class="catalog__categories-item swiper-slide" href="#">Зимние носки</a><a class="catalog__categories-item swiper-slide" href="#">Носки сетка </a></div>
+              </div>
+              <button class="catalog__categories-control catalog__categories-next slider-control js-categories-slider-next">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                    </svg>
+              </button>
+            </div>
+          </div>
+          <div class="catalog__panel">
+            <div class="catalog__panel-filters">
+              <button class="btn btn--border catalog__panel-btn catalog__show-filters js-catalog-filter-open" type="button">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#filter"></use>
+                    </svg><span>Показать фильтры</span>
+                <div class="catalog__show-filters-arrow">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                      </svg>
+                </div>
+              </button>
+              <button class="btn btn--border catalog__hide-filters js-catalog-filter-close" type="button">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#filter"></use>
+                    </svg><span>Скрыть фильтры</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#close"></use>
+                    </svg>
+              </button>
+              <button class="btn btn--border btn--icon catalog__reset-filters" type="button">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#filter-reset"></use>
+                    </svg>
+              </button>
+            </div>
+            <div class="catalog__sorting">
+              <button class="catalog__sorting-btn js-catalog-sort-btn" type="button">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#sort-up"></use>
+                    </svg><span class="catalog__sorting-desk">Сортировать по цене</span><span class="catalog__sorting-mob">По цене</span>
+              </button>
+              <div class="catalog__sorting-popup js-catalog-sort">
+                <button class="catalog__sorting-heading js-catalog-sort-close" type="button"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-link-left"></use>
+                      </svg>Сортировать
+                </button>
+                <div class="catalog__sorting-list"> 
+                  <div class="catalog__sorting-item"> 
+                    <input type="radio" id="sort_01" name="sort" checked>
+                    <label class="js-catalog-sort-item" for="sort_01"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#sort-up"></use>
+                          </svg><span>По цене </span>
+                    </label>
+                  </div>
+                  <div class="catalog__sorting-item"> 
+                    <input type="radio" id="sort_02" name="sort">
+                    <label class="js-catalog-sort-item" for="sort_02"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#sort-down"></use>
+                          </svg><span>По цене</span>
+                    </label>
+                  </div>
+                  <div class="catalog__sorting-item"> 
+                    <input type="radio" id="sort_03" name="sort">
+                    <label class="js-catalog-sort-item" for="sort_03"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#sort-up"></use>
+                          </svg><span>По имени (А - Я)</span>
+                    </label>
+                  </div>
+                  <div class="catalog__sorting-item"> 
+                    <input type="radio" id="sort_04" name="sort">
+                    <label class="js-catalog-sort-item" for="sort_04"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#sort-down"></use>
+                          </svg><span>По имени (Я - А)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__views"> 
+              <button class="catalog__views-item is-selected" type="button"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#cards"></use>
+                    </svg><span>Вид карточками</span>
+              </button>
+              <button class="catalog__views-item" type="button"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="img/icons/icons.svg#columns"></use>
+                    </svg><span>Вид колонками</span>
+              </button>
+            </div>
+          </div>
+          <div class="catalog__content">
+            <div class="catalog__filters filters-catalog js-catalog-filter"> 
+              <div class="filters-catalog__heading"> 
+                <button class="filters-catalog__heading-back js-catalog-filter-close"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-link-left"></use>
+                      </svg>
+                </button><span class="filters-catalog__heading-title">Фильтры</span>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#rubble"></use>
+                        </svg><span>Цена</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body">
+                  <div class="filters-catalog__price"> 
+                    <div class="filters-catalog__price-inputs"> 
+                      <div class="filters-catalog__price-inputs-item"><span>От</span>
+                        <input class="form-control js-range-input-min" type="text">
+                      </div>
+                      <div class="filters-catalog__price-inputs-item"><span>До</span>
+                        <input class="form-control js-range-input-max" type="text"><span>₽</span>
+                      </div>
+                    </div>
+                    <div class="filters-catalog__price-range">
+                      <div class="filters-catalog__price-range-slider js-range-slider"></div>
+                      <div class="filters-catalog__price-range-items"> 
+                        <div class="filters-catalog__price-range-item">4 ₽</div>
+                        <div class="filters-catalog__price-range-item">2398 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#clubok"></use>
+                        </svg><span>Производитель</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body"> 
+                  <div class="filters-catalog__search"> 
+                    <div class="filters-catalog__search-icon"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#search"></use>
+                          </svg>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Поиск по производителю">
+                  </div>
+                  <div class="filters-catalog__controls">
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_01">
+                      <label for="f_developer_01">AMIGOBS</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_02">
+                      <label for="f_developer_02">BAYKAR</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_03">
+                      <label for="f_developer_03">Conte</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_04">
+                      <label for="f_developer_04">DMDBS</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_05">
+                      <label for="f_developer_05">DONELLA</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_06">
+                      <label for="f_developer_06">DOVER</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_07">
+                      <label for="f_developer_07">ESS</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_08">
+                      <label for="f_developer_08">Fukai</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_09">
+                      <label for="f_developer_09">FUTE</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_10">
+                      <label for="f_developer_10">Grabro</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_11">
+                      <label for="f_developer_11">GREENICE</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_12">
+                      <label for="f_developer_12">Limax</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_13">
+                      <label for="f_developer_13">MANZI</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_14">
+                      <label for="f_developer_14">БЕРЁЗА-ЛАРИСА</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_15">
+                      <label for="f_developer_15">Богатырь</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_16">
+                      <label for="f_developer_16">Заря</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_17">
+                      <label for="f_developer_17">Лариса</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_18">
+                      <label for="f_developer_18">Зувей</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_19">
+                      <label for="f_developer_19">AMIGOBS</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_developer" id="f_developer_20">
+                      <label for="f_developer_20">BAYKAR</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#world"></use>
+                        </svg><span>Страна</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body"> 
+                  <div class="filters-catalog__controls">
+                    <div class="label"> 
+                      <input type="checkbox" name="f_country" id="f_country_01">
+                      <label for="f_country_01">Россия</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_country" id="f_country_02">
+                      <label for="f_country_02">Беларусь</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_country" id="f_country_03">
+                      <label for="f_country_03">Китай</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_country" id="f_country_04">
+                      <label for="f_country_04">Турция</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_country" id="f_country_05">
+                      <label for="f_country_05">Узбекистан</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#palette"></use>
+                        </svg><span>Цвета</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body">
+                  <div class="filters-catalog__colors">
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_01">
+                      <label for="f_color_01" style="--label-color: #FFFFFF"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_02">
+                      <label for="f_color_02" style="--label-color: #F0F0F0"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_03">
+                      <label for="f_color_03" style="--label-color: #999999"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_04">
+                      <label for="f_color_04" style="--label-color: #555555"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_05">
+                      <label for="f_color_05" style="--label-color: #000000"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_06">
+                      <label for="f_color_06" style="--label-color: #0000FE"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_07">
+                      <label for="f_color_07" style="--label-color: #C0987E"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_08">
+                      <label for="f_color_08" style="--label-color: #297A40"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_09">
+                      <label for="f_color_09" style="--label-color: #FD85B2"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_10">
+                      <label for="f_color_10" style="--label-color: #FE0000"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_11">
+                      <label for="f_color_11" style="--label-color: #FFFF00"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_12">
+                      <label for="f_color_12" style="--label-color: #50C878"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_13">
+                      <label for="f_color_13" style="--label-color: #FFBF00"> </label>
+                    </div>
+                    <div class="label-color"> 
+                      <input type="checkbox" name="f_color" id="f_color_14">
+                      <label for="f_color_14" style="--label-color: conic-gradient(from 180deg at 50% 50%, #FF0000 0deg, #348A00 136.8deg, #0040E5 244.8deg, #990000 360deg);"> </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#characteristics"></use>
+                        </svg><span>Характеристики</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body"> 
+                  <div class="form-checkbox"> 
+                    <input type="checkbox" name="" id="f_chars_01">
+                    <label for="f_chars_01"> <span>Сетка</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#textile"></use>
+                        </svg><span>Состав</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body">
+                  <div class="filters-catalog__search"> 
+                    <div class="filters-catalog__search-icon"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#search"></use>
+                          </svg>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Поиск по производителю">
+                  </div>
+                  <div class="filters-catalog__checkboxes">
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_01">
+                      <label for="f_sostav_01"> <span>92% Полиамид 8% Эластан</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_01">
+                      <label for="f_sostav_01"> <span>Акрилик</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_02">
+                      <label for="f_sostav_02"> <span>Антибактериальный хлопок</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_03">
+                      <label for="f_sostav_03"> <span>Верблюжья шерсть</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_04">
+                      <label for="f_sostav_04"> <span>Верх 100%Полиэфир, низ 100%Полиэфир, внутри утеплитель</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_05">
+                      <label for="f_sostav_05"> <span>Верх 100% Полиэфир, низ 100% Полиэфир, внутри утеплитель</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_06">
+                      <label for="f_sostav_06"> <span>Верх 100%Полиэфир, низ 100%Полиэфир, внутри утеплитель</span></label>
+                    </div>
+                    <div class="form-checkbox"> 
+                      <input type="checkbox" name="" id="f_sostav_07">
+                      <label for="f_sostav_07"> <span>Верх 100% Полиэфир, низ 100% Полиэфир, внутри утеплитель</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filters-catalog__section js-accordeon"> 
+                <div class="filters-catalog__section-head js-accordeon-toggle">
+                  <div class="filters-catalog__section-head-name"> 
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#size"></use>
+                        </svg><span>Размеры</span>
+                  </div>
+                  <div class="filters-catalog__section-head-toggle">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="filters-catalog__section-content js-accordeon-body">
+                  <div class="filters-catalog__search"> 
+                    <div class="filters-catalog__search-icon"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#search"></use>
+                          </svg>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Поиск по производителю">
+                  </div>
+                  <div class="filters-catalog__controls">
+                    <div class="label"> 
+                      <input type="checkbox" name="f_ages" id="f_ages_01">
+                      <label for="f_ages_01">0-1 год</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_country" id="f_ages_02">
+                      <label for="f_ages_02">0-2 года</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_ages" id="f_ages_03">
+                      <label for="f_ages_03">0-6 мес</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_ages" id="f_ages_04">
+                      <label for="f_ages_04">1-2 года</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_ages" id="f_ages_05">
+                      <label for="f_ages_05">1-3 года</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_ages" id="f_ages_06">
+                      <label for="f_ages_06">Безразмерный</label>
+                    </div>
+                    <div class="label"> 
+                      <input type="checkbox" name="f_ages" id="f_ages_07">
+                      <label for="f_ages_07">Универсальный</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__main">
+              <div class="catalog__list catalog-cards">
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-01.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-01.webp" type="image/webp"><img src="./img/catalog/catalog-01.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_010" name="c_color_01" checked>
+                          <label for="c_color_010">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_011" name="c_color_01">
+                          <label for="c_color_011">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_012" name="c_color_01">
+                          <label for="c_color_012">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_013" name="c_color_01">
+                          <label for="c_color_013">Синий</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_014" name="c_color_01">
+                          <label for="c_color_014">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_01" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_011" name="c_size_01">
+                          <label for="c_size_011">27-29</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_012" name="c_size_01">
+                          <label for="c_size_012">29-31</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_013" name="c_size_01">
+                          <label for="c_size_013">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-02.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-02.webp" type="image/webp"><img src="./img/catalog/catalog-02.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_020" name="c_color_02" checked>
+                          <label for="c_color_020">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_021" name="c_color_02">
+                          <label for="c_color_021">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_022" name="c_color_02">
+                          <label for="c_color_022">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_023" name="c_color_02">
+                          <label for="c_color_023">Красный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_024" name="c_color_02">
+                          <label for="c_color_024">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_02" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_021" name="c_size_02">
+                          <label for="c_size_021">27-29</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_022" name="c_size_02">
+                          <label for="c_size_022">29-31</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_023" name="c_size_02">
+                          <label for="c_size_023">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-03.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-03.webp" type="image/webp"><img src="./img/catalog/catalog-03.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_030" name="c_color_03" checked>
+                          <label for="c_color_030">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_031" name="c_color_03">
+                          <label for="c_color_031">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_032" name="c_color_03">
+                          <label for="c_color_032">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_033" name="c_color_03">
+                          <label for="c_color_033">Серобуромалиновый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_034" name="c_color_03">
+                          <label for="c_color_034">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_03" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_031" name="c_size_03">
+                          <label for="c_size_031">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-04.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-04.webp" type="image/webp"><img src="./img/catalog/catalog-04.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_040" name="c_color_04" checked>
+                          <label for="c_color_040">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_041" name="c_color_04">
+                          <label for="c_color_041">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_042" name="c_color_04">
+                          <label for="c_color_042">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_043" name="c_color_04">
+                          <label for="c_color_043">Синий</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_044" name="c_color_04">
+                          <label for="c_color_044">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_04" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_041" name="c_size_04">
+                          <label for="c_size_041">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-01.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-01.webp" type="image/webp"><img src="./img/catalog/catalog-01.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_050" name="c_color_05" checked>
+                          <label for="c_color_050">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_051" name="c_color_05">
+                          <label for="c_color_051">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_052" name="c_color_05">
+                          <label for="c_color_052">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_053" name="c_color_05">
+                          <label for="c_color_053">Синий</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_054" name="c_color_05">
+                          <label for="c_color_054">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_05" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_051" name="c_size_05">
+                          <label for="c_size_051">27-29</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_052" name="c_size_05">
+                          <label for="c_size_052">29-31</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_053" name="c_size_05">
+                          <label for="c_size_053">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-02.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-02.webp" type="image/webp"><img src="./img/catalog/catalog-02.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_060" name="c_color_06" checked>
+                          <label for="c_color_060">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_061" name="c_color_06">
+                          <label for="c_color_061">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_062" name="c_color_06">
+                          <label for="c_color_062">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_063" name="c_color_06">
+                          <label for="c_color_063">Синий</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_064" name="c_color_06">
+                          <label for="c_color_064">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_06" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_061" name="c_size_06">
+                          <label for="c_size_061">27-29</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_062" name="c_size_06">
+                          <label for="c_size_062">29-31</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_063" name="c_size_06">
+                          <label for="c_size_063">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-03.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-03.webp" type="image/webp"><img src="./img/catalog/catalog-03.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_070" name="c_color_07" checked>
+                          <label for="c_color_070">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_071" name="c_color_07">
+                          <label for="c_color_071">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_072" name="c_color_07">
+                          <label for="c_color_072">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_073" name="c_color_07">
+                          <label for="c_color_073">Синий</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_074" name="c_color_07">
+                          <label for="c_color_074">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_07" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_071" name="c_size_07">
+                          <label for="c_size_071">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-card"> 
+                  <div class="catalog-card__main"> 
+                    <div class="catalog-card__stickers stickers"> 
+                      <div class="sticker sticker--blue">
+                            <svg width="10" height="10">
+                              <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>С видео
+                      </div>
+                      <div class="sticker">Новинка</div>
+                    </div>
+                    <picture class="catalog-card__img"> 
+                      <source srcset="./img/catalog/catalog-04.jpg" type="image/jpeg">
+                      <source srcset="./img/catalog/catalog-04.webp" type="image/webp"><img src="./img/catalog/catalog-04.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="catalog-card__info"> 
+                    <div class="catalog-card__price">
+                      <div class="catalog-card__price-current">45.5</div>
+                      <div class="catalog-card__price-old">200.2</div>
+                      <div class="catalog-card__price-per-one">₽ / пара</div>
+                    </div><a class="catalog-card__name" href="#">МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558</a>
+                    <div class="catalog-card__details">
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_080" name="c_color_08" checked>
+                          <label for="c_color_080">Чёрный</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_081" name="c_color_08">
+                          <label for="c_color_081">Белый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_082" name="c_color_08">
+                          <label for="c_color_082">Жёлтый</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_083" name="c_color_08">
+                          <label for="c_color_083">Синий</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_color_084" name="c_color_08">
+                          <label for="c_color_084">Чёрно-белый</label>
+                        </div>
+                      </div>
+                      <div class="catalog-card__details-row">
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_00" name="c_size_08" checked>
+                          <label for="c_size_00">23-25</label>
+                        </div>
+                        <div class="catalog-card__detail label">
+                          <input type="radio" id="c_size_081" name="c_size_08">
+                          <label for="c_size_081">31-33</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__warning"> 
+                          <svg width="16" height="16">
+                            <use xlink:href="img/icons/icons.svg#warning-small"></use>
+                          </svg>Цена зависит от размера
+                    </div>
+                    <div class="catalog-card__controls"> 
+                      <div class="catalog-card__counter counter">
+                        <button class="counter-control"> 
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#minus"></use>
+                              </svg>
+                        </button>
+                        <input class="counter-input" type="text" value="3" readonly>
+                        <button class="counter-control">
+                              <svg width="24" height="24">
+                                <use xlink:href="img/icons/icons.svg#plus"></use>
+                              </svg>
+                        </button>
+                      </div>
+                      <button class="catalog-card__to-basket btn btn--wide btn--blck" type="button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__pagination pagination">
+                <button class="pagination__control" type="button">1</button>
+                <button class="pagination__control is-selected" type="button">2 </button>
+                <button class="pagination__control" type="button">3 </button>
+                <button class="pagination__control" type="button">4 </button>
+                <button class="pagination__control" type="button">5 </button>
+                <button class="pagination__control" type="button">... </button>
+                <button class="pagination__control" type="button">Дальше</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__main"> 
+          <div class="footer__section footer__address"> 
+            <div class="footer__section-icon"> 
+                  <svg width="24" height="24">
+                    <use xlink:href="img/icons/icons.svg#pin"></use>
+                  </svg>
+            </div>
+            <div class="footer__section-info">
+              <div class="footer__address-desc">Оренбург, Кондукторская ул., 2АТК Город Локомотив, 4 эт., место 8-9</div><a class="footer__address-email" href="mailto:orensocks@yandex.ru">orensocks@yandex.ru</a>
+            </div>
+          </div>
+          <div class="footer__section footer__schedule">
+            <div class="footer__section-icon"> 
+                  <svg width="24" height="24">
+                    <use xlink:href="img/icons/icons.svg#clock"></use>
+                  </svg>
+            </div>
+            <div class="footer__section-info">
+              <p><span>ПН-ВС 9:00 - 18:00</span> без перерывов</p>
+              <p>Заказы принимаются круглосуточно</p>
+            </div>
+          </div>
+          <div class="footer__section footer__contacts"> 
+            <div class="footer__section-icon"> 
+                  <svg width="24" height="24">
+                    <use xlink:href="img/icons/icons.svg#tel"></use>
+                  </svg>
+            </div>
+            <div class="footer__section-info"><a href="tel:8 800 550-49-98 "> <span>8 800 550-49-98 </span>(Звонок бесплатный)</a><a href="tel:8 800 550-49-98 "> <span>+7 987 874-14-20</span>(Лилия)</a></div>
+          </div>
+        </div>
+        <div class="footer__desc"> 
+          <p>Носки оптом от производителя можно купить здесь - "ORENSOCKS"  © Все права защищены.</p>
+          <p>Использование данного сайта подразумевает согласие с <a href="#">Политикой конфиденциальности</a>.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-nav"> 
+      <button class="mobile-nav__item js-catalog-menu-btn" type="button"><span class="mobile-nav__item-icon"> 
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#catalog-menu"></use>
+              </svg></span><span class="mobile-nav__item-title">Каталог</span></button>
+      <button class="mobile-nav__item" type="button" data-modal-target="modal-contacts"><span class="mobile-nav__item-icon"> 
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#phone"></use>
+              </svg></span><span class="mobile-nav__item-title">Связаться</span></button>
+      <button class="mobile-nav__item js-handler" type="button" data-id="h-cabinet"><span class="mobile-nav__item-icon"> 
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#user"></use>
+              </svg></span><span class="mobile-nav__item-title">Войти</span></button>
+      <button class="mobile-nav__item js-handler" type="button" data-id="h-basket"><span class="mobile-nav__item-icon"> 
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#basket"></use>
+              </svg></span><span class="mobile-nav__item-title">Корзина</span><span class="mobile-nav__item-counter">10</span></button>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

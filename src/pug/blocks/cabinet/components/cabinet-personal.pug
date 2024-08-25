@@ -1,0 +1,42 @@
+.cabinet__section.js-tabs-content(data-content="c-personal") 
+  .cabinet__section-title Профиль пользователя
+  .cabinet__section-content 
+    .cabinet-personal 
+      form(action="").cabinet-personal__form 
+        .cabinet-personal__block
+          .cabinet-personal__block-title Логин / Email *
+          .cabinet-personal__block-contnet 
+            .form-group 
+              input.form-control(type="text" placeholder="Email" value="ya@rekora.ru")
+              span.form-error
+                +svg(24, 24, 'warning')
+              label.form-label При смене новый Email необходимо будет подтвердить.
+        .cabinet-personal__block
+          .cabinet-personal__block-title Полное имя
+          .cabinet-personal__block-contnet 
+            .form-group 
+              input.form-control(type="text" placeholder="Полное имя")
+              span.form-error
+                +svg(24, 24, 'warning')
+              label.form-label Например Иван Петров.
+        .cabinet-personal__block
+          .cabinet-personal__block-title Пароль
+          .cabinet-personal__block-contnet 
+            .form-group 
+              input.form-control(type="password" placeholder="Пароль" value="123456")
+              span.form-error
+                +svg(24, 24, 'warning')
+              label.form-label Вы можете указать новый пароль 
+            .form-group 
+              input.form-control(type="password" placeholder="Пароль" value="123456")
+              span.form-error
+                +svg(24, 24, 'warning')
+              label.form-label Необходимо повторить новый пароль еще раз, чтобы исключить опечатку.
+        .cabinet-personal__block
+          .cabinet-personal__block-title Телефон
+          .cabinet-personal__block-contnet 
+            .form-group 
+              input.form-control(type="tel" placeholder="Телефон" value="+7(912)233-74-64")
+              span.form-error
+                +svg(24, 24, 'warning')
+        button(type="button").cabinet-personal__save.btn.btn--350.btn--blck Сохранить

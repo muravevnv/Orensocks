@@ -1,0 +1,97 @@
+section.cart 
+  .container
+    h1.h1.heading.cart__title 
+      a(href="").cart__title-back 
+        +svg(24, 24, 'arrow-link-left')
+      | Способы доставки и оплаты
+    .cart-main 
+      .cart-order
+        form.cart-order__form
+          .cart-order__section 
+            .form-notification
+              .form-notification__text Укажите корректный Email
+              button(type="button").form-notification__close
+                +svg(24, 24, 'close')
+            .cart-order__section-title Выберите способ доставки
+            .form-group 
+              .form-toggle 
+                input(type="radio", name="order_delivery" id="order_delivery_01")
+                label(for="order_delivery_01") 
+                  span.form-toggle__controller 
+                  span.form-toggle__text Доставка транспортными компаниями 
+            .form-group 
+              .form-select
+                select.js-form-select(name="") 
+                  option(value="1") Почта России
+                  option(value="2") Доставка по России ПЭК
+                  option(value="3") Доставка по России Деловые Линии
+                  option(value="4") Доставка по России Энергия
+                  option(value="5") Доставка по России ЖелДорЭкспедиция
+                  option(value="6") Почта России
+              label.form-label 
+                +svg(16, 16, 'truck')
+                span Отправляем груз транспортными компаниями каждый день.
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                input.form-control(type="text" placeholder="Серия и номер паспорта *") 
+                label.form-label(for="#") 
+                  +svg(16, 16, 'warning-small')
+                  span Необходимо указать для транспортной компании.
+            .form-group 
+              .form-toggle 
+                input(type="radio", name="order_delivery" id="order_delivery_02")
+                label(for="order_delivery_02") 
+                  span.form-toggle__controller 
+                  span.form-toggle__text Самовывоз со склада
+              span.form-label 
+                span Оренбург, улица Кондукторская 2А, рынок Локомотив, 4 этаж, место 8-9.
+            .form-group 
+              .form-toggle 
+                input(type="radio", name="order_delivery" id="order_delivery_03")
+                label(for="order_delivery_03") 
+                  span.form-toggle__controller 
+                  span.form-toggle__text Доставка по городу Оренбургу
+              span.form-label Мы производим бесплатную доставку по Оренбургу при единовременной покупке от 8000 рублей.
+            .form-group 
+              .form-toggle 
+                input(type="radio", name="order_delivery" id="order_delivery_04")
+                label(for="order_delivery_04") 
+                  span.form-toggle__controller 
+                  span.form-toggle__text Другой способ доставки
+              span.form-label 
+                span Если Вашей транспортной нет в списке - укажите ее в Комментарии к заказу. Мы рассмотрим возможность доставки до нее.
+          .cart-order__section 
+            .cart-order__section-title Выберите способ оплаты
+            .form-group 
+              .form-select
+                select.js-form-select(name="") 
+                  option(value="1") Оплата на расчётный счёт
+                  option(value="2") Оплата на карту Сбербанка
+                  option(value="3") Оплата на карту Tinkoff (недоступна при выборе  "Другого способа" доставки)
+                  option(value="4") Доставка по России Энергия
+                  option(value="5" hidden) Оплата наличными (только при самовывозе или доставке по Оренбургу)
+              label.form-label.form-label--red 
+                +svg(16, 16, 'warning-small')
+                span При оплате на расчётный счёт скидка не предоставляется.
+              label.form-label.form-label--green
+                +svg(16, 16, 'discount')
+                span При оплате на карту Сбербанк скидка для постоянных клиентов составляет 3%
+          button(type="button").cart-order__btn.btn.btn--blck Указать данные грузополучателя
+            +svg(24, 24, 'arrow-right')
+      .cart-aside 
+        .cart-aside__main 
+          .cart-aside__total 
+            .cart-aside__total-title Итого в корзине
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество позиций
+              .cart-aside__total-row-info <span>18</span>
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество товаров
+              .cart-aside__total-row-info <span>18</span> штук
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Сумма
+              .cart-aside__total-row-info <b>3276</b> ₽

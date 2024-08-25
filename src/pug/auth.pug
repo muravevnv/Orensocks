@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Авторизация')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Авторизация'])
+      section.auth 
+        .container 
+          h1.heading.auth__title.h1 Авторизация
+          .auth__main 
+            .auth__img 
+              img(src="./img/auth/auth.svg", alt="")
+            form.auth__form(action="#") 
+              .form-notification 
+                .form-notification__text Укажите корректный Email
+                button(type="button").form-notification__close
+                  +svg(24, 24, 'close')
+              .form-group 
+                span.form-error
+                input.form-control(type="text" placeholder="Логин / Email *") 
+                label.form-label(for="#") 
+                  +svg(16, 16, 'mail-symbol')
+                  span Укажите Email, который вы использовали при регистрации.
+              .form-group 
+                span.form-error
+                input.form-control(type="password" placeholder="Пароль") 
+                label.form-label(for="#") 
+                  +svg(16, 16, 'warning-small')
+                  span Если вы не помните свой пароль - оставьте это поле пустым и вы получите новый пароль, вместе со ссылкой на активацию.
+              .form-btn.btn.btn--wide.btn--blck Войти
+              .auth__form-tip Впервые на Orensocks? 
+                a(href="#") Зарегистрироваться
+
+    include components/footer
+    include includes/scripts

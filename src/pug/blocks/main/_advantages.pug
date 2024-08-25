@@ -1,0 +1,23 @@
+section.section.advantages 
+  .container 
+    .advantages__slider.js-advantages-slider 
+      .swiper-wrapper 
+        .swiper-slide
+          .advantages-item(style="background-image: url('../img/advantages/bg-01.jpg')")
+            .advantages-item__title Приглашаем оптовиков и организаторов совместных покупок!
+            picture.advantages-item__img 
+              source(srcset="./img/banners/bags.webp")
+              img(src="./img/banners/bags.png", alt="")
+        .swiper-slide
+          .advantages-item(style="background-image: url('../img/advantages/bg-02.jpg')")
+            .advantages-item__title Никаких ожиданий, весь товар в наличии!
+            picture.advantages-item__img 
+              source(srcset="./img/banners/storage.webp")
+              img(src="./img/banners/storage.png", alt="")
+        .swiper-slide
+          .advantages-item(style="background-image: url('../img/advantages/bg-03.jpg')")
+            .advantages-item__title Отправляем транспортными компаниями во все населенные пункты
+            picture.advantages-item__img 
+              source(srcset="./img/banners/truks.webp" type="image/webp")
+              img(src="./img/banners/truks.png", alt="")
+      .swiper-pagination

@@ -1,0 +1,169 @@
+.banner {
+
+  // &.section {
+
+  //   @include media(sm) {
+  //     padding: 20px 0 8px;
+  //   }
+  // }
+
+  &--purple {
+    .banner__inner {
+      background: linear-gradient(96.06deg, #E3DFE8 0%, #CFCBD4 100%);
+    }
+  }
+
+  &--blue {
+    .banner__inner {
+      background: linear-gradient(96.06deg, #C4E4EE 0%, #BFDFE9 100%);
+    }
+  }
+
+  &--md {
+    .banner__inner {
+      min-height: 80px;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 16px 110px 16px 16px;
+      border-radius: 8px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    padding: 16px  320px 16px 24px;
+    border-radius: 16px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+
+    @include media(sm) {
+      padding: 12px 180px 12px 12px;
+      border-radius: 8px;
+      min-height: 80px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+    flex-shrink: 0;
+
+    @include media(md) {
+      font-size: 16px;
+      flex-shrink: initial;
+    }
+
+    @include media(sm)  {
+      font-size: 14px;
+    }
+  }
+
+  &__desc {
+    width: 100%;
+    font-size: 9px;
+
+    @include media(lg) {
+      display: none;
+    }
+  }
+
+  &__img {
+    max-width: 290px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include media(sm) {
+      max-width: 160px;
+    }
+  }
+
+  &__delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    @include media(sm) {
+      justify-content: flex-start;
+    }
+
+    &-title {
+      font-size: 32px;
+      font-weight: 900;
+
+      @include media(md) {
+        font-size: 24px;
+      }
+
+      @include media(sm) {
+        font-size: 16px;
+        text-align: left;
+        max-width: 140px;
+      }
+    }
+  }
+
+  &__contacts {
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-weight: 600;
+
+      @include media(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      &--tel {
+        .banner__contacts-item-info {
+          font-size: 32px;
+          font-weight: 900;
+
+          @include media(sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &-item-label {
+      min-width: 180px;
+
+      @include media(md) {
+        display: none;
+      }
+    }
+
+    &-item-info {
+      font-size: 24px;
+
+      @include media(sm) {
+        font-size: 13px;
+        font-weight: 900;
+      }
+    }
+
+    &-item-desc {
+      font-weight: 400;
+      color: var(--colot-alt);
+
+      @include media(sm) {
+        font-size: 10px;
+      }
+    }
+  }
+}

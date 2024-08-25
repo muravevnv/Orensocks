@@ -1,0 +1,47 @@
+section.cart 
+  .container
+    h1.h1.heading.cart__title 
+      a(href="").cart__title-back 
+        +svg(24, 24, 'arrow-link-left')
+      | Дозаказ к заказу №
+    .cart-main 
+      .cart-order
+        form.cart-order__form
+          .cart-order__section 
+            .form-notification.is-open 
+              .form-notification__text Укажите корректный Email
+              button(type="button").form-notification__close
+                +svg(24, 24, 'close')
+            .cart-order__section-text В случае дозаказа минимальная сумма заказа не ограничивается
+            .form-group 
+              input.form-control(type="text" placeholder="Email*")
+              span.form-error
+                +svg(24, 24, 'warning')
+            .form-group 
+              input.form-control(type="text" placeholder="Телефон*")
+              span.form-error
+                +svg(24, 24, 'warning')
+            .form-group.is-error 
+              input.form-control(type="text" placeholder="Номер предыдущего заказа*")
+              span.form-error
+                +svg(24, 24, 'warning')
+            .form-group 
+              textarea.form-control(name="" placeholder="Комментарий" cols="10" rows="6")
+          button(type="button").cart-order__btn.btn.btn--blck Указать данные грузополучателя
+            +svg(24, 24, 'arrow-right')
+      .cart-aside 
+        .cart-aside__main 
+          .cart-aside__total 
+            .cart-aside__total-title Итого в корзине
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество позиций
+              .cart-aside__total-row-info <span>18</span>
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество товаров
+              .cart-aside__total-row-info <span>18</span> штук
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Сумма
+              .cart-aside__total-row-info <b>3276</b> ₽

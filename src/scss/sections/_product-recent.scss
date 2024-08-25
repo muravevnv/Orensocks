@@ -1,0 +1,25 @@
+.product-recent {
+
+  &__list {
+    overflow: hidden;
+  }
+
+  &__slider {
+    overflow: hidden;
+    width: calc(100% + 20px);
+    margin: 0 -8px;
+
+    @include media(sm) {
+      width: calc(100% + 8px);
+      margin: 0 -4px;
+    }
+  }
+
+  .catalog-card {
+    border-right: 1px solid var(--color-border) !important;
+
+    &:last-of-type {
+      border-right: 0 !important;
+    }
+  }
+}

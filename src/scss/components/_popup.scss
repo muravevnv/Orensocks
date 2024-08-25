@@ -1,0 +1,134 @@
+.popup {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &--md {
+    .popup__content {
+      max-width: 540px;
+    }
+  }
+
+  &--sm {
+    .popup__content {
+      max-width: 365px;
+    }
+  }
+
+  &-bottom {
+    @include media(xs) {
+      
+      .popup__wrapper {
+        padding: 0;
+      }
+      
+      .popup__inner {
+        justify-content: flex-end;
+      }
+
+      .popup__content {
+        max-width: 100%;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cl(blck, .5);
+    z-index: 2;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    padding: 16px;
+    overflow-y: scroll;
+  }
+
+  &__inner {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 730px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: cl(whte);
+    vertical-align: middle;
+
+    z-index: 3;
+  }
+
+  &__close {
+    --size: 24px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 3;
+    width: var(--size);
+    height: var(--size);
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    margin: 24px 0;
+    text-align: center;
+    color: var(--color-alt);
+
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      margin: 4px 0;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  &__block {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--color-main-bg);
+
+    @include media(sm) {
+      padding: 8px;
+    }
+  }
+}

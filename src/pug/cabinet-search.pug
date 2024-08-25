@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+  include includes/head
+  +head('Личный кабинет')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'О нас'], 'Главная')
+      +heading('Личный кабинет')
+      include blocks/cabinet/cabinet-search
+
+    include components/footer
+    include includes/scripts

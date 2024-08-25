@@ -1,0 +1,16 @@
+section.cart 
+  .container
+    h1.h1.heading Ваш заказ принят
+    .cart-result
+      .default-result 
+        picture.default-result__img 
+          source(srcset="./img/cart/accepted.svg")
+          img(src="./img/cart/accepted.svg", alt="")
+        .default-result__order 
+          .default-result__order-title Ваш заказ
+          .default-result__order-num   
+            span #2403/142
+            .default-result__order-copy 
+              +svg(24, 24, 'copy')
+          .default-result__order-text принят, спасибо!
+        a(href="#").default-result__btn.btn.btn--outline Перейти в каталог

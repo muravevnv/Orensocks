@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Каталог')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Контакты', 'Носки в подарочной упаковке', 'Мужские носки'], 'Каталог')
+      +heading('Носки в подарочной упаковке')
+      section.catalog.js-catalog 
+        .container
+          include blocks/catalog/catalog-categories
+          include blocks/catalog/catalog-panel
+          .catalog__content
+            include blocks/catalog/catalog-filters 
+            .catalog__main
+              include blocks/catalog/catalog-cards-list
+              .catalog__pagination.pagination
+                button(type="button").pagination__control 1
+                button(type="button").pagination__control.is-selected 2 
+                button(type="button").pagination__control 3 
+                button(type="button").pagination__control 4 
+                button(type="button").pagination__control 5 
+                button(type="button").pagination__control ... 
+                button(type="button").pagination__control Дальше
+      
+    include components/footer
+    include includes/scripts

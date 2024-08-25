@@ -1,0 +1,46 @@
+footer.footer 
+  .container 
+    .footer__main 
+      .footer__section.footer__address 
+        .footer__section-icon 
+          +svg(24, 24, 'pin')
+        .footer__section-info
+          .footer__address-desc Оренбург, Кондукторская ул., 2АТК Город Локомотив, 4 эт., место 8-9
+          a.footer__address-email(href="mailto:orensocks@yandex.ru") orensocks@yandex.ru
+      .footer__section.footer__schedule
+        .footer__section-icon 
+          +svg(24, 24, 'clock')
+        .footer__section-info
+          p <span>ПН-ВС 9:00 - 18:00</span> без перерывов
+          p Заказы принимаются круглосуточно
+      .footer__section.footer__contacts 
+        .footer__section-icon 
+          +svg(24, 24, 'tel')
+        .footer__section-info
+          a(href="tel:8 800 550-49-98 ") 
+            span 8 800 550-49-98 
+            | (Звонок бесплатный)
+          a(href="tel:8 800 550-49-98 ") 
+            span +7 987 874-14-20
+            | (Лилия)
+    .footer__desc 
+      p Носки оптом от производителя можно купить здесь - "ORENSOCKS"  © Все права защищены.
+      p Использование данного сайта подразумевает согласие с <a href="#">Политикой конфиденциальности</a>.
+.mobile-nav 
+  button(type="button").mobile-nav__item.js-catalog-menu-btn
+    span.mobile-nav__item-icon 
+      +svg(24, 24, 'catalog-menu')
+    span.mobile-nav__item-title Каталог
+  button(type="button" data-modal-target="modal-contacts").mobile-nav__item
+    span.mobile-nav__item-icon 
+      +svg(24, 24, 'phone')
+    span.mobile-nav__item-title Связаться
+  button(type="button" data-id="h-cabinet").mobile-nav__item.js-handler
+    span.mobile-nav__item-icon 
+      +svg(24, 24, 'user')
+    span.mobile-nav__item-title Войти
+  button(type="button" data-id="h-basket").mobile-nav__item.js-handler
+    span.mobile-nav__item-icon 
+      +svg(24, 24, 'basket')
+    span.mobile-nav__item-title Корзина
+    span.mobile-nav__item-counter 10

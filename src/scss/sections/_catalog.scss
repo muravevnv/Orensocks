@@ -1,0 +1,370 @@
+.catalog {
+
+  &.is-filter-open {
+    // .catalog-cards {
+    //   grid-template-columns: repeat(3, 1fr);
+
+    //   @include media(lg) {
+    //     grid-template-columns: repeat(2, 1fr);
+    //   }
+    // }
+
+    .catalog-card {
+      width: 33.3333%;
+
+      &:nth-of-type(4n + 4) {
+        border-right: 1px solid var(--color-border);
+      }
+
+      &:nth-of-type(3n + 3) {
+        border-right: 0px;
+      } 
+
+      @include media(lg) {
+        width: 50%;
+        padding: 8px 4px;
+    
+        &:nth-of-type(3n + 3) {
+          border-right: 1px solid var(--color-border);
+        } 
+    
+        &:nth-of-type(2n + 2) {
+          border-right: 0px;
+        }
+      }
+    }
+
+    .catalog__show-filters {
+      display: none;
+    }
+
+    .catalog__hide-filters, .catalog__reset-filters {
+      display: flex;
+    }
+  }
+  
+  &__categories {
+    margin-bottom: 24px;
+
+    @include media(sm) {
+      margin-bottom: 0;
+    }
+
+    &-prev {
+
+
+      &::before {
+        position: absolute;
+        content: '';
+        background: linear-gradient(270deg, rgba(241, 241, 239, 0) 0%, #F1F1EF 100%);
+        width: 40px;
+        height: 46px;
+        right: -45px;
+        z-index: 2;
+      }
+    }
+
+    &-next {
+
+
+      &::before {
+        position: absolute;
+        content: '';
+        background: linear-gradient(90deg, rgba(241, 241, 239, 0) 0%, #F1F1EF 100%);
+        width: 40px;
+        height: 46px;
+        left: -45px;
+        z-index: 2;
+      }
+    }
+
+    &-control {
+      position: relative;
+      flex-shrink: 0;
+
+      &.swiper-button-disabled {
+        display: none;
+      }
+
+      @include media(md) {
+        display: none;
+      }
+    }
+
+    &-panel {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &-list {
+      overflow: hidden;
+      padding: 8px 10px;
+      margin: 0 -10px;
+
+      @include media(sm) {
+        padding: 8px;
+        margin: 0 -8px;
+      }
+    }
+
+    &-item {
+      display: inline-block;
+      width: auto;
+      padding: 8px 12px;
+      box-shadow: 2px 2px 7px 0px #0000000D;
+      border-radius: 8px;
+      background-color: cl(whte);
+      transition: .25s;
+
+      @include media(hover) {
+        &:hover {
+          background-color: cl(blck);
+          color: cl(whte);
+        }
+      }
+
+      @include media(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__panel {
+    display: grid;
+    grid-template-columns: 255px 1fr 2fr;
+    gap: 30px;
+    padding: 8px 0;
+
+    @include media(md) {
+      gap: 16px;
+    }
+
+    @include media(md) {
+      gap: 8px;
+      grid-template-columns: auto 1fr auto;
+    }
+
+    &-filters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__hide-filters {
+    white-space: nowrap;
+  }
+
+  &__hide-filters,
+  &__reset-filters {
+    display: none;
+  }
+
+  &__show-filters {
+    width: 100%;
+  }
+
+  &__sorting {
+    width: 100%;
+    position: relative;
+
+    &-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 5px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 600;
+      border: 2px solid cl(primary);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &-popup {
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      margin-top: 5px;
+      padding: 8px;
+      background-color: var(--color-whte);
+      border-radius: 8px;
+      box-shadow: 0px 15px 15px 0px #00000026;
+      z-index: 3; 
+      display: none;
+
+      @include media(sm) {
+        padding: 0 15px;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        inset: 0;
+        border-radius: 0;
+        margin-top: 0;
+        box-shadow: none;
+      }
+
+      &.is-open {
+        display: block;
+      }
+    }
+
+    &-heading {
+      display: none;
+
+      @include media(sm) {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-height: 48px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+
+    &-item {
+      input {
+        position: fixed;
+        transform: scale(0);
+
+        &:checked + label {
+          background-color: var(--color-primary-darken);
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 5px;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__show-filters {
+    line-height: 1;
+
+    @include media(sm) {
+      span {
+        display: none;
+      }
+    }
+
+    &-arrow {
+
+      --size: 24px;
+      width: var(--size);
+      height: var(--size);
+
+      @include media(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__sorting {
+
+    &-desk {
+
+      @include media(sm) {
+        display: none;
+      }
+    }
+
+    &-mob {
+      display: none;
+
+      @include media(sm) {
+        display: block;
+      }
+    }
+  }
+
+  &__views {
+    display: flex;
+    align-items: center;
+    border: 2px solid cl(primary);
+    border-radius: 8px;
+    overflow: hidden;
+
+    &-item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 5px 8px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 600;
+      cursor: pointer;
+
+      @include media(md) {
+        span {
+          display: none;
+        }
+      }
+      
+      &.is-selected {
+        background-color: cl(primary);
+      }
+    }
+  }
+
+  &__main {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__filters {
+    max-width: 255px;
+    width: 100%;
+    flex-shrink: 0;
+
+    @include media(md) {
+      position: fixed;
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    @include media(sm) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.catalog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // gap: 0 28px;
+  // overflow: hidden;
+
+  // @include media(lg) {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
+
+  // @include media(md) {
+  //   grid-template-columns: 1fr 1fr;
+  // }
+
+  // @include media(sm) {
+  //   gap: 8px;
+  // }
+}
+

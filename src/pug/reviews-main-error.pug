@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Отзывы')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Отзывы'])
+      +heading('Отзывы')
+      section.reviews 
+        .container 
+          include blocks/reviews/components/_reviews-list
+          include blocks/reviews/components/_reviews-pagination
+          include blocks/reviews/components/_reviews-error
+
+
+    include components/footer
+    include includes/scripts

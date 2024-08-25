@@ -1,0 +1,50 @@
+.catalog__panel
+  .catalog__panel-filters
+    button(type="button").btn.btn--border.catalog__panel-btn.catalog__show-filters.js-catalog-filter-open
+      +svg(24, 24, 'filter')
+      span Показать фильтры
+      .catalog__show-filters-arrow
+        +svg(24, 24, 'arrow-right')
+    button(type="button").btn.btn--border.catalog__hide-filters.js-catalog-filter-close
+      +svg(24, 24, 'filter')
+      span Скрыть фильтры
+      +svg(24, 24, 'close')
+    button(type="button").btn.btn--border.btn--icon.catalog__reset-filters
+      +svg(24, 24, 'filter-reset')
+  .catalog__sorting
+    button(type="button").catalog__sorting-btn.js-catalog-sort-btn
+      +svg(24, 24, 'sort-up')
+      span.catalog__sorting-desk Сортировать по цене
+      span.catalog__sorting-mob По цене
+    .catalog__sorting-popup.js-catalog-sort
+      button(type="button").catalog__sorting-heading.js-catalog-sort-close 
+        +svg(24, 24, 'arrow-link-left')
+        | Сортировать
+      .catalog__sorting-list 
+        .catalog__sorting-item 
+          input(type="radio" id="sort_01" name="sort" checked)
+          label(for="sort_01" class="js-catalog-sort-item") 
+            +svg(24, 24, 'sort-up')
+            span По цене 
+        .catalog__sorting-item 
+          input(type="radio" id="sort_02" name="sort")
+          label(for="sort_02" class="js-catalog-sort-item") 
+            +svg(24, 24, 'sort-down')
+            span По цене
+        .catalog__sorting-item 
+          input(type="radio" id="sort_03" name="sort")
+          label(for="sort_03" class="js-catalog-sort-item") 
+            +svg(24, 24, 'sort-up')
+            span По имени (А - Я)
+        .catalog__sorting-item 
+          input(type="radio" id="sort_04" name="sort")
+          label(for="sort_04" class="js-catalog-sort-item") 
+            +svg(24, 24, 'sort-down')
+            span По имени (Я - А)
+  .catalog__views 
+    button(type="button").catalog__views-item.is-selected 
+      +svg(24, 24, 'cards')
+      span Вид карточками
+    button(type="button").catalog__views-item 
+      +svg(24, 24, 'columns')
+      span Вид колонками

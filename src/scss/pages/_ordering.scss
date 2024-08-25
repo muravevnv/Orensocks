@@ -1,0 +1,65 @@
+.ordering-section {
+
+  &__desc {
+
+    p:not(:last-of-type) {
+      margin-bottom: 24px;
+
+      @include media(md) {
+        margin-bottom: 16px;
+      }
+    } 
+
+    p {
+
+      @include media(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.ordering-benefits {
+  margin-top: 24px;
+
+  @include media(sm) {
+    margin-top: 16px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+
+    @include media(sm) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include media(sm) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    padding: 16px;
+    border-radius: 8px;
+
+    @include media(sm) {
+      min-height: 100px;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  }
+}

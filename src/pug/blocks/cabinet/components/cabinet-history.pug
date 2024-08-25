@@ -1,0 +1,257 @@
+.cabinet__section.js-tabs-content.is-active(data-content="c-history")
+  .cabinet__section-title История заказов
+  .cabinet__section-content 
+    .cabinet-history 
+      .cabinet-history__filters.cabinet-filters
+        .cabinet-filters__status
+          .cabinet-order-status 
+            .cabinet-order-status__select
+              .form-select
+                select.js-form-select(name="") 
+                  option(value="1") Все
+                  option(value="2") Новый
+                  option(value="3") Принят к оплате
+                  option(value="3") Оплачен
+                  option(value="3") Отправлен
+            button.cabinet-order-status__show-popup(data-modal-target="modal-status-select")
+              +svg(24, 24, 'filter')
+
+        .cabinet-filters__searchbar
+          .searchbar.js-search
+            .searchbar__panel 
+              input(type="text" placeholder="Номер заказа").searchbar__input.form-control.js-search-input
+              button(type="button").searchbar__clear.js-search-clear
+                +svg(24, 24, 'close')
+              span.searchbar__icon 
+                  +svg(24, 24, 'search')
+        .cabinet-filters__amount-show 
+          .form-select
+            select.js-form-select(name="") 
+              option(value="1") 10
+              option(value="2") 20
+              option(value="3") 30
+      .cabinet-history__table.cabinet__table.table
+        table 
+          thead
+            tr 
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Номер
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Статус
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Стоимость
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Доставка
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Оплата
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Дата создания
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Дата изменения
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th
+          tbody
+            tr 
+              td 2403/142
+              td Новый
+              td 276 ₽
+              td Почта России
+              td На расчетный счёт
+              td 
+                .table-datetime 11.03.24
+                  span 20:20
+              td 
+                .table-datetime 11.03.24
+                  span 20:20
+              td 
+                .table-info
+                  button(type="button" data-modal-target="modal-order").table-info__btn
+                    +svg(24, 24, 'info')
+                  .table-info__tip Подробности
+            tr 
+              td 2403/142
+              td Новый
+              td 276 ₽
+              td Почта России
+              td На расчетный счёт
+              td 
+                .table-datetime 11.03.24
+                  span 20:20
+              td 
+                .table-datetime 11.03.24
+                  span 20:20
+              td 
+                .table-info
+                  button(type="button" data-modal-target="modal-order").table-info__btn
+                    +svg(24, 24, 'info')
+                  .table-info__tip Подробности
+            tr 
+              td 2403/142
+              td Новый
+              td 276 ₽
+              td Почта России
+              td На расчетный счёт
+              td 
+                .table-datetime 11.03.24
+                  span 20:20
+              td 
+                .table-datetime 11.03.24
+                  span 20:20
+              td 
+                .table-info
+                  button(type="button" data-modal-target="modal-order").table-info__btn
+                    +svg(24, 24, 'info')
+                  .table-info__tip Подробности
+        .table-panel 
+          .table-panel__amounts 
+            .table-panel__amount-select 
+              .form-select
+                select.js-form-select(name="") 
+                  option(value="1") 10
+                  option(value="2") 20
+                  option(value="3") 30
+            .table-panel__amount-number 1 - 40 of 40
+          .table-panel__controls 
+            button(type="button" disabled).table-panel__control 
+              +svg(24, 24, 'arrow-left') 
+            .table-panel__page-number 1
+            button(type="button").table-panel__control  
+              +svg(24, 24, 'arrow-right')
+      .cabinet-history__cards 
+        .cabinet-history-card 
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Номер
+            .cabinet-history-card__detail-info 2403/142
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Статус
+            .cabinet-history-card__detail-info Новый
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Стоимость
+            .cabinet-history-card__detail-info 276
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Доставка
+            .cabinet-history-card__detail-info Почта России
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Оплата
+            .cabinet-history-card__detail-info На расчетный счёт
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Дата создания
+            .cabinet-history-card__detail-info 11.03.24
+              span 20:20
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Дата изменения
+            .cabinet-history-card__detail-info 11.03.24
+              span 20:20
+          button(type="button").cabinet-history-card__btn.btn.btn--blck.btn--wide Подробности
+        .cabinet-history-card 
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Номер
+            .cabinet-history-card__detail-info 2403/142
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Статус
+            .cabinet-history-card__detail-info Новый
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Стоимость
+            .cabinet-history-card__detail-info 276
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Доставка
+            .cabinet-history-card__detail-info Почта России
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Оплата
+            .cabinet-history-card__detail-info На расчетный счёт
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Дата создания
+            .cabinet-history-card__detail-info 11.03.24
+              span 20:20
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Дата изменения
+            .cabinet-history-card__detail-info 11.03.24
+              span 20:20
+          button(type="button").cabinet-history-card__btn.btn.btn--blck.btn--wide Подробности
+        .cabinet-history-card 
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Номер
+            .cabinet-history-card__detail-info 2403/142
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Статус
+            .cabinet-history-card__detail-info Новый
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Стоимость
+            .cabinet-history-card__detail-info 276
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Доставка
+            .cabinet-history-card__detail-info Почта России
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Оплата
+            .cabinet-history-card__detail-info На расчетный счёт
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Дата создания
+            .cabinet-history-card__detail-info 11.03.24
+              span 20:20
+          .cabinet-history-card__detail 
+            .cabinet-history-card__detail-title 
+              span Дата изменения
+            .cabinet-history-card__detail-info 11.03.24
+              span 20:20
+          button(type="button").cabinet-history-card__btn.btn.btn--blck.btn--wide Подробности

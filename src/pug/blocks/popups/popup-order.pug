@@ -1,0 +1,345 @@
+.popup.order(id="modal-order" data-modal)
+  .popup__overlay 
+  .popup__wrapper
+    .popup__inner 
+      .popup__content 
+        button(type="button" data-modal-close).popup__close
+          +svg(24, 24, 'close')
+        .order__heading(data-modal-close) 
+          .order__heading-icon 
+            +svg(24, 24, 'arrow-link-left')
+          .order__heading-title заказ № 2403/142
+        .order__main  
+          .order__nav 
+            button(type="button" data-control="order-info").order__nav-btn.js-tabs-control.is-selected Заказ
+            button(type="button" data-control="order-goods").order__nav-btn.js-tabs-control Покупки
+            button(type="button" data-control="order-adress").order__nav-btn.js-tabs-control Адрес
+          .order__content.js-tabs-content.is-active(data-content="order-info")
+            .order__details 
+              .order__detail 
+                .order__detail-title 
+                  span Покупатель
+                .order__detail-info Янковский Алексей
+              .order__detail 
+                .order__detail-title 
+                  span Стоимость заказа
+                .order__detail-info 275 ₽
+              .order__detail 
+                .order__detail-title 
+                  span Номер заказа
+                .order__detail-info 2403/142
+              .order__detail 
+                .order__detail-title 
+                  span Вес
+                .order__detail-info 275 ₽
+              .order__detail 
+                .order__detail-title 
+                  span Оплата
+                .order__detail-info На расчетный счёт
+              .order__detail 
+                .order__detail-title 
+                  span Стоимость доставки
+                .order__detail-info 0 ₽
+              .order__detail 
+                .order__detail-title 
+                  span Доставка
+                .order__detail-info Почта России
+            .order__table
+              .table
+                table 
+                  thead
+                    tr 
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Метка времени
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Действие
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Запись
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                  tbody
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Новый
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Новый
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Новый
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Новый
+                    tr 
+                      td 27.03.2024 07:31
+                      td Статус  
+                      td Отменён
+                .table-panel 
+                  .table-panel__amounts 
+                    .table-panel__amount-select 
+                      .form-select
+                        select.js-form-select(name="") 
+                          option(value="1") 10
+                          option(value="2") 20
+                          option(value="3") 30
+                    .table-panel__amount-number 1 - 40 of 40
+                  .table-panel__controls 
+                    button(type="button" disabled).table-panel__control 
+                      +svg(24, 24, 'arrow-left') 
+                    .table-panel__page-number 1
+                    button(type="button").table-panel__control  
+                      +svg(24, 24, 'arrow-right') 
+          .order__content.js-tabs-content(data-content="order-goods")
+            .order__table
+              .table
+                table 
+                  thead
+                    tr 
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Товар
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Артикул
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Вес 
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Цена 
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name 
+                            nobr Кол-во
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                      th 
+                        .table-cell-head 
+                          .table-cell-head__name Стоимость 
+                          .table-cell-head__sorting 
+                            button(type="button").table-cell-head__sorting-up
+                              +svg(8, 5, 'polygon-up')
+                            button(type="button").table-cell-head__sorting-down
+                              +svg(8, 5, 'polygon-down')
+                  tbody
+                    tr 
+                      td 
+                        a(href="#") НОСКИ МУЖСКИЕ С 23 ФЕВРАЛЯ!!! В ПОДАРОЧНОЙ УПАКОВКЕ ХЛОПОК ЧЕРНЫЕ Ф005
+                      td 3717 
+                      td 0 кг
+                      td 27,5 ₽
+                      td 10
+                      td 275 ₽
+                    tr
+                      td
+                        a(href="#") НОСКИ МУЖСКИЕ С 23 ФЕВРАЛЯ!!! В ПОДАРОЧНОЙ УПАКОВКЕ ХЛОПОК ЧЕРНЫЕ Ф005
+                      td 3717 
+                      td 0 кг
+                      td 27,5 ₽
+                      td 10
+                      td 275 ₽
+                .table-panel 
+                  .table-panel__amounts 
+                    .table-panel__amount-select 
+                      .form-select
+                        select.js-form-select(name="") 
+                          option(value="1") 10
+                          option(value="2") 20
+                          option(value="3") 30
+                    .table-panel__amount-number 1 - 40 of 40
+                  .table-panel__controls 
+                    button(type="button" disabled).table-panel__control 
+                      +svg(24, 24, 'arrow-left') 
+                    .table-panel__page-number 1
+                    button(type="button").table-panel__control  
+                      +svg(24, 24, 'arrow-right')
+            .order__table-cards 
+              .table-info-card 
+                a(href="#").table-info-card__title НОСКИ МУЖСКИЕ С 23 ФЕВРАЛЯ!!! В ПОДАРОЧНОЙ УПАКОВКЕ ХЛОПОК ЧЕРНЫЕ Ф005
+                .table-info-card__details 
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Артикул
+                    .table-info-card__detail-desc 3717
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Вес
+                    .table-info-card__detail-desc 0 кг
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Цена
+                    .table-info-card__detail-desc 27,5 ₽
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Количество
+                    .table-info-card__detail-desc 10
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Стоимость
+                    .table-info-card__detail-desc 275 ₽
+              .table-info-card 
+                a(href="#").table-info-card__title НОСКИ МУЖСКИЕ С 23 ФЕВРАЛЯ!!! В ПОДАРОЧНОЙ УПАКОВКЕ ХЛОПОК ЧЕРНЫЕ Ф005
+                .table-info-card__details 
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Артикул
+                    .table-info-card__detail-desc 3717
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Вес
+                    .table-info-card__detail-desc 0 кг
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Цена
+                    .table-info-card__detail-desc 27,5 ₽
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Количество
+                    .table-info-card__detail-desc 10
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Стоимость
+                    .table-info-card__detail-desc 275 ₽
+              .table-info-card 
+                a(href="#").table-info-card__title НОСКИ МУЖСКИЕ С 23 ФЕВРАЛЯ!!! В ПОДАРОЧНОЙ УПАКОВКЕ ХЛОПОК ЧЕРНЫЕ Ф005
+                .table-info-card__details 
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Артикул
+                    .table-info-card__detail-desc 3717
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Вес
+                    .table-info-card__detail-desc 0 кг
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Цена
+                    .table-info-card__detail-desc 27,5 ₽
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Количество
+                    .table-info-card__detail-desc 10
+                  .table-info-card__detail   
+                    .table-info-card__detail-title                   
+                      span Стоимость
+                    .table-info-card__detail-desc 275 ₽
+                  
+          .order__content.js-tabs-content(data-content="order-adress")
+            .order__details 
+              .order__detail 
+                .order__detail-title 
+                  span Получатель
+                .order__detail-info Янковский Алексей
+              .order__detail 
+                .order__detail-title 
+                  span Телефон
+                .order__detail-info +7(912)627-87-64
+              .order__detail 
+                .order__detail-title 
+                  span Индекс
+                .order__detail-info 620023
+              .order__detail.order__detail--empty
+                .order__detail-title 
+                  span Страна
+                .order__detail-info Не указано
+              .order__detail.order__detail--empty 
+                .order__detail-title 
+                  span Область
+                .order__detail-info Не указано
+              .order__detail 
+                .order__detail-title 
+                  span Город
+                .order__detail-info Екатеринбург
+              .order__detail.order__detail--empty 
+                .order__detail-title 
+                  span Станция метро
+                .order__detail-info Не указано
+              .order__detail 
+                .order__detail-title 
+                  span Улица
+                .order__detail-info Луначарского
+              .order__detail 
+                .order__detail-title 
+                  span Здание
+                .order__detail-info 12
+              .order__detail.order__detail--empty 
+                .order__detail-title 
+                  span Комната
+                .order__detail-info Не указано
+              .order__detail 
+                .order__detail-title 
+                  span Комментарий к заказу
+                .order__detail-info Дозаказ к заказу № 2403/106
+        button(type="button").order__close.btn.btn--wide.btn--outline Закрыть
+

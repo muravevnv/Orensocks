@@ -1,0 +1,121 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 7px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  font-style: normal;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-blck);
+  gap: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+
+  @media(any-hover: hover) {
+    &:hover {
+      background-color: var(--color-whte); 
+      border-color: var(--color-whte);
+      color: var(--color-blck);
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--350 {
+    width: 350px;
+
+    @include media(xs) {
+      width: 100%;
+    }
+  }
+
+  &--sm {
+    padding: 5px 7px;
+    font-size: 12px;
+    line-height: 1;
+    gap: 4px;
+  }
+
+  &--blck {
+    background-color: var(--color-blck);
+    border-color: var(--color-blck);
+    color: var(--color-whte);
+  }
+
+  &--whte {
+    background-color: var(--color-whte);
+    border-color: var(--color-whte);
+    color: var(--color-blck);
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: var(--color-blck);
+    border-color: var(--color-blck);
+
+    @include media(hover) {
+      &:hover {
+        background-color: var(--color-blck);
+        color: var(--color-whte);
+      }
+    }
+  }
+
+  &--border {
+    background-color: transparent;
+    color: var(--color-alt);
+    border-color: var(--color-primary);
+    border-width: 2px;
+
+    @include media(hover) {
+      &:hover {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        color: var(--color-alt);
+      }
+    }
+  }
+
+  &--icon {
+    width: 36px;
+    padding: 5px;
+
+  }
+
+  &--transparent {
+    color: var(--color-blck);
+    background-color: transparent;
+    border-color: transparent;
+
+    @include media(hover) {
+      &:hover {
+        background-color: var(--color-primary-hovered);
+        border-color: var(--color-primary-hovered);
+        color: var(--color-blck);
+      }
+    }
+  }
+
+  // &:disabled,
+  // &[disabled] {
+  //   pointer-events: none;
+  //   background-color: var(--color-grey-light);
+  //   border-color: var(--color-grey-light);
+  // }
+
+  &:disabled,
+  &[disabled] {
+    pointer-events: none;
+    opacity: .3;
+  }
+}
+
+

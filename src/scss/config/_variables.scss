@@ -1,0 +1,41 @@
+$colors: (
+  "whte": #fff,
+  "blck": #1D1515,
+  "drk": #2F4252,
+  "alt": #5D6063,
+  "text": #0D0D0D,
+  "main-bg": #F1F1EF,
+  "red": #C11A1A,
+  "red-light": #F8D7DA,
+  "red-hovered": #D6311B,
+  "red-border": #F5C6CB,
+  "danger": #DC3545,
+  "primary": #EAD0BD,
+  "primary-hovered": #EBDED3,
+  "primary-darken": #EBDED3,
+  "secondary": #FA8A00,
+  "blue": #0478B9,
+  "success": #418E52,
+  "success-light": #C3E6CB,
+  "grey": #ACB1B6,
+  "grey-light": #CED0D1,
+  "grey-bg": #E9E9E9,
+  "border": #DFDFDF,
+  "border-light": #F1F1EF,
+);
+
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+  --container-width: 1150px;
+  --container-pad: 20px;
+  --font-main: "NotoSans", sans-serif;
+  --font-title: "NotoSans", sans-serif;
+  --font-size: 16px;
+  --transition: 0.3s ease-in-out;
+}

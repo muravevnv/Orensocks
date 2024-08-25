@@ -1,0 +1,141 @@
+.footer {
+  padding: 48px 0 40px;
+
+  @include media(md) {
+    padding: 40px 0 80px;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 24px;
+
+    @include media(lg) {
+      gap: 24px;
+    }
+
+    @include media(sm) {
+      grid-template-columns: 1fr;
+      gap: 34px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__section {
+    padding: 24px 24px 16px 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px 2px 7px 0px #0000000D;
+
+    @include media(md) {
+      padding: 20px 16px 8px;
+      border-radius: 8px;
+    }
+
+    p {
+      color: var(--color-alt);
+      
+      span {
+        font-weight: 600;
+        color: var(--color-blck);
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 4px;
+      }
+
+      @include media(md) {
+        font-size: 13px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-icon {
+      --size: 40px;
+      width: var(--size);
+      height: var(--size);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 16px;
+      top: -20px;
+      background-color: var(--color-whte);
+      border-radius: 50%;
+    }
+  }
+
+  &__address {
+    background: linear-gradient(96.06deg, #F0EADE 0%, #E6E0D4 100%);
+
+    &-desc {
+      font-weight: 600;
+      margin-bottom: 2px;
+
+      @include media(md) {
+        font-size: 14px;
+      }
+    }
+
+    &-email {
+      color: var(--color-blue);
+    }
+  }
+
+  &__schedule {
+    background: linear-gradient(96.06deg, #E3DFE8 0%, #CFCBD4 100%);
+  }
+
+  &__contacts {
+    background: linear-gradient(96.06deg, #C4E4EE 0%, #BFDFE9 100%);
+
+    a {
+      display: block;
+      color: var(--color-alt);
+
+      &:not(:last-of-type) {
+        margin-bottom: 4px;
+      }
+
+      span {
+        font-weight: 600;
+        color: var(--color-blue);
+      }
+
+      @include media(md) {
+        font-size: 12px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    color: var(--color-alt);
+
+    @include media(sm) {
+      font-size: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+
+      a {
+        color: var(--color-blue);
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

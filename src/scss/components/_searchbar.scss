@@ -1,0 +1,232 @@
+ .searchbar-panel {
+  position: relative;
+  width: 100%;
+
+  &__input {
+    height: 36px;
+    padding: 8px 8px 8px 32px;
+    border: 1px solid var(--color-border);
+    display: block;
+    width: 100%;
+    color: var(--color-blck);
+    border-radius: 8px;
+    background-color: var(--color-whte);
+
+    &::placeholder {
+      color: var(--color-alt);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 4px;
+    top: 6px;
+  }
+}
+
+
+.searchbar {
+  position: relative;
+
+  &.is-active {
+
+    .searchbar__clear {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+
+    .searchbar__btn {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .searchbar__result-popup {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+
+  &__panel {
+    position: relative;
+  }
+
+  &__input {
+    padding: 8px 8px 8px 32px;
+
+    &:focus {
+      box-shadow: none;
+      border-color: var(--color-grey);
+    }
+  }
+
+  &__icon {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    left: 4px;
+    top: 6px;
+  }
+
+  &__clear {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &--with-btn {
+      right: 53px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 9px 7px;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-grey);
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__result-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    background-color: var(--color-whte);
+    border-radius: 8px;
+    box-shadow: 0px 15px 15px 0px #00000026;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+
+  &__result-region-item {
+    padding: 4px 2px;
+
+    cursor: pointer;
+
+    @include media(sm) {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px 0 0 0;
+    }
+
+    &-area {
+      font-size: 14px;
+      color: var(--color-alt);
+
+      @include media(sm) {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--color-blck);
+        order: -1;
+      }
+    }
+
+    &-city {
+      font-size: 16px;
+      color: var(--color-blue);
+      
+      @include media(sm)  {
+
+      }
+    }
+  }
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+
+  &__link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    padding: 8px 4px;
+    transition: var(--transition) background-color; 
+    border-radius: 8px;
+
+    span {
+      padding: 2px 4px;
+    }
+
+    @include media(hover) {
+      &:hover {
+        background-color: var(--color-primary-hovered);
+
+        .search-result-item__icon {
+          background-color: var(--color-whte);
+        }
+      }
+    }
+
+    @include media(sm) {
+      align-items: flex-start;
+      padding: 8px 2px;
+    }  
+  }
+
+  &__remove {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0 auto;
+    transition: var(--transition) background-color; 
+
+    @include media(hover) {
+
+      &:hover {
+        background-color: var(--color-primary-hovered);
+      }
+    }
+  }
+
+  &__icon {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--color-main-bg);
+    border-radius: 50%;
+    transition: var(--transition) background-color; 
+
+    @include media(sm) {
+      background-color: cl(whte);
+    }
+  }
+}

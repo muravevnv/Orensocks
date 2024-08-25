@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Оформление заказа')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Корзина',  'Оформление заказа'], 'Главная')
+      include blocks/cart/cart-order-customer
+
+    include components/footer
+    include includes/scripts

@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Главная')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      .container.container--sm 
+        ul 
+          li 
+            a(href="home.html") Главная
+        
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Каталог
+        ul 
+          li 
+            a(href="catalog.html") Каталог
+          li 
+            a(href="catalog-cards.html") Каталог(плитка)
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Карточка товара
+        ul 
+          li 
+            a(href="product.html") Карточка товара
+          li 
+            a(href="product-empty-reviews.html") Карточка товара (нет отзывов)
+          li 
+            a(href="product-with-recent.html") Карточка товара (вы смотрели, еще товары)
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Корзина
+        ul 
+          li 
+            a(href="cart.html") Корзина 
+          li 
+            a(href="cart-additional-order.html") Корзина Дозаказ к заказу 
+          li 
+            a(href="cart-order.html") Корзина Способы доставки и оплаты
+          li 
+            a(href="cart-order-customer.html") Корзина Данные грузополучателя
+          li 
+            a(href="cart-empty.html") Корзина пустая
+          li 
+            a(href="cart-error.html") Корзина ошибка
+          li 
+            a(href="cart-accepted.html") Корзина заказп принят
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Авторизация
+        ul 
+          li 
+            a(href="auth.html") Авторизация
+          li 
+            a(href="reg.html") Регистрация
+          li 
+            a(href="reg-confirm.html") Подтверждение авторизации
+          li 
+            a(href="password-recovery.html") Восстановление пароля
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") ЛК
+        ul 
+          li 
+            a(href="cabinet.html") ЛК
+          li 
+            a(href="cabinet-empty.html") ЛК. Пустая страница
+          li 
+            a(href="cabinet-search.html") ЛК. Результаты поиска
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Отзывы
+        ul 
+          li 
+            a(href="reviews-main.html") Отзывы. Список
+          li 
+            a(href="reviews-main-success.html") Отзывы. Список (успешная отправка)
+          li 
+            a(href="reviews-main-error.html") Отзывы. Cписок (ошибка)
+          li 
+            a(href="reviews-result-success.html") Отзывы. Успешная отправка
+          li 
+            a(href="reviews-result-error.html") Отзывы. Ошибка
+          li 
+            a(href="reviews-result-empty.html") Отзывы. Пустая страница
+
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Другие страницы
+        ul 
+          li 
+            a(href="about.html") О нас
+          li 
+            a(href="delivery.html") Доставка
+          li 
+            a(href="ordering.html") Оформление и оплата товара
+          li 
+            a(href="contacts.html") Контакты
+        h3(style="font-size: 24px; margin: 16px 0; font-weight: 700") Попапы
+        ul 
+          li 
+            a(href="popups.html") Попапы
+    include components/footer
+    include includes/scripts

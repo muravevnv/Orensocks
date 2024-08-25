@@ -1,0 +1,266 @@
+.catalog__filters.filters-catalog.js-catalog-filter  
+  .filters-catalog__heading 
+    button.filters-catalog__heading-back.js-catalog-filter-close 
+      +svg(24, 24, 'arrow-link-left')
+    span.filters-catalog__heading-title Фильтры
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'rubble')
+        span Цена
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body
+      .filters-catalog__price 
+        .filters-catalog__price-inputs 
+          .filters-catalog__price-inputs-item
+            span От
+            input.form-control.js-range-input-min(type="text")
+          .filters-catalog__price-inputs-item
+            span До
+            input.form-control.js-range-input-max(type="text")
+            span ₽
+        .filters-catalog__price-range
+          .filters-catalog__price-range-slider.js-range-slider
+          .filters-catalog__price-range-items 
+            .filters-catalog__price-range-item 4 ₽
+            .filters-catalog__price-range-item 2398 ₽
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'clubok')
+        span Производитель
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body 
+      .filters-catalog__search 
+        .filters-catalog__search-icon 
+          +svg(24, 24, 'search')
+        input.form-control(type="text" placeholder="Поиск по производителю")
+      .filters-catalog__controls
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_01")
+          label(for="f_developer_01") AMIGOBS
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_02")
+          label(for="f_developer_02") BAYKAR
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_03")
+          label(for="f_developer_03") Conte
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_04")
+          label(for="f_developer_04") DMDBS
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_05")
+          label(for="f_developer_05") DONELLA
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_06")
+          label(for="f_developer_06") DOVER
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_07")
+          label(for="f_developer_07") ESS
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_08")
+          label(for="f_developer_08") Fukai
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_09")
+          label(for="f_developer_09") FUTE
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_10")
+          label(for="f_developer_10") Grabro
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_11")
+          label(for="f_developer_11") GREENICE
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_12")
+          label(for="f_developer_12") Limax
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_13")
+          label(for="f_developer_13") MANZI
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_14")
+          label(for="f_developer_14") БЕРЁЗА-ЛАРИСА
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_15")
+          label(for="f_developer_15") Богатырь
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_16")
+          label(for="f_developer_16") Заря
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_17")
+          label(for="f_developer_17") Лариса
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_18")
+          label(for="f_developer_18") Зувей
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_19")
+          label(for="f_developer_19") AMIGOBS
+        .label 
+          input(type="checkbox", name="f_developer" id="f_developer_20")
+          label(for="f_developer_20") BAYKAR
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'world')
+        span Страна
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body 
+      .filters-catalog__controls
+        .label 
+          input(type="checkbox", name="f_country" id="f_country_01")
+          label(for="f_country_01") Россия
+        .label 
+          input(type="checkbox", name="f_country" id="f_country_02")
+          label(for="f_country_02") Беларусь
+        .label 
+          input(type="checkbox", name="f_country" id="f_country_03")
+          label(for="f_country_03") Китай
+        .label 
+          input(type="checkbox", name="f_country" id="f_country_04")
+          label(for="f_country_04") Турция
+        .label 
+          input(type="checkbox", name="f_country" id="f_country_05")
+          label(for="f_country_05") Узбекистан
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'palette')
+        span Цвета
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body
+      .filters-catalog__colors
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_01")
+          label(for="f_color_01" style="--label-color: #FFFFFF") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_02")
+          label(for="f_color_02" style="--label-color: #F0F0F0") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_03")
+          label(for="f_color_03" style="--label-color: #999999") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_04")
+          label(for="f_color_04" style="--label-color: #555555") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_05")
+          label(for="f_color_05" style="--label-color: #000000") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_06")
+          label(for="f_color_06" style="--label-color: #0000FE") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_07")
+          label(for="f_color_07" style="--label-color: #C0987E") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_08")
+          label(for="f_color_08" style="--label-color: #297A40") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_09")
+          label(for="f_color_09" style="--label-color: #FD85B2") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_10")
+          label(for="f_color_10" style="--label-color: #FE0000") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_11")
+          label(for="f_color_11" style="--label-color: #FFFF00") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_12")
+          label(for="f_color_12" style="--label-color: #50C878") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_13")
+          label(for="f_color_13" style="--label-color: #FFBF00") 
+        .label-color 
+          input(type="checkbox", name="f_color" id="f_color_14")
+          label(for="f_color_14" style="--label-color: conic-gradient(from 180deg at 50% 50%, #FF0000 0deg, #348A00 136.8deg, #0040E5 244.8deg, #990000 360deg);") 
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'characteristics')
+        span Характеристики
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body 
+      .form-checkbox 
+        input(type="checkbox", name="" id="f_chars_01")
+        label(for="f_chars_01") 
+          span Сетка
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'textile')
+        span Состав
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body
+      .filters-catalog__search 
+        .filters-catalog__search-icon 
+          +svg(24, 24, 'search')
+        input.form-control(type="text" placeholder="Поиск по производителю")
+      .filters-catalog__checkboxes
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_01")
+          label(for="f_sostav_01") 
+            span 92% Полиамид 8% Эластан
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_01")
+          label(for="f_sostav_01") 
+            span Акрилик
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_02")
+          label(for="f_sostav_02") 
+            span Антибактериальный хлопок
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_03")
+          label(for="f_sostav_03") 
+            span Верблюжья шерсть
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_04")
+          label(for="f_sostav_04") 
+            span Верх 100%Полиэфир, низ 100%Полиэфир, внутри утеплитель
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_05")
+          label(for="f_sostav_05") 
+            span Верх 100% Полиэфир, низ 100% Полиэфир, внутри утеплитель
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_06")
+          label(for="f_sostav_06") 
+            span Верх 100%Полиэфир, низ 100%Полиэфир, внутри утеплитель
+        .form-checkbox 
+          input(type="checkbox", name="" id="f_sostav_07")
+          label(for="f_sostav_07") 
+            span Верх 100% Полиэфир, низ 100% Полиэфир, внутри утеплитель
+  .filters-catalog__section.js-accordeon 
+    .filters-catalog__section-head.js-accordeon-toggle
+      .filters-catalog__section-head-name 
+        +svg(24, 24, 'size')
+        span Размеры
+      .filters-catalog__section-head-toggle
+        +svg(24, 24, 'arrow-right')
+    .filters-catalog__section-content.js-accordeon-body
+      .filters-catalog__search 
+        .filters-catalog__search-icon 
+          +svg(24, 24, 'search')
+        input.form-control(type="text" placeholder="Поиск по производителю")
+      .filters-catalog__controls
+        .label 
+          input(type="checkbox", name="f_ages" id="f_ages_01")
+          label(for="f_ages_01") 0-1 год
+        .label 
+          input(type="checkbox", name="f_country" id="f_ages_02")
+          label(for="f_ages_02") 0-2 года
+        .label 
+          input(type="checkbox", name="f_ages" id="f_ages_03")
+          label(for="f_ages_03") 0-6 мес
+        .label 
+          input(type="checkbox", name="f_ages" id="f_ages_04")
+          label(for="f_ages_04") 1-2 года
+        .label 
+          input(type="checkbox", name="f_ages" id="f_ages_05")
+          label(for="f_ages_05") 1-3 года
+        .label 
+          input(type="checkbox", name="f_ages" id="f_ages_06")
+          label(for="f_ages_06") Безразмерный
+        .label 
+          input(type="checkbox", name="f_ages" id="f_ages_07")
+          label(for="f_ages_07") Универсальный

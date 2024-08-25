@@ -1,0 +1,61 @@
+@import 'libs/swiper';
+@import 'libs/choices';
+@import 'libs/nouislider';
+
+//Config
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/global';
+@import 'config/typography';
+@import 'config/form';
+@import 'config/common';
+
+//Components
+
+@import 'components/btn';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+@import 'components/popup';
+@import 'components/searchbar';
+@import 'components/banner';
+@import 'components/product-card';
+@import 'components/catalog-menu';
+@import 'components/mobile-nav';
+@import 'components/filters-catalog';
+@import 'components/catalog-card';
+@import 'components/catalog-item';
+@import 'components/default-result';
+@import 'components/region-mobile';
+@import 'components/mobile-contacts';
+@import 'components/table';
+@import 'components/table-info-card';
+
+//Sections
+@import 'sections/hero';
+@import 'sections/product-list';
+@import 'sections/advantages';
+@import 'sections/benefits';
+@import 'sections/shop';
+@import 'sections/manufacturer';
+@import 'sections/cart';
+@import 'sections/cart-conditions';
+@import 'sections/cart-order';
+@import 'sections/cart-result';
+@import 'sections/reviews';
+@import 'sections/product';
+@import 'sections/product-recent';
+@import 'sections/catalog';
+@import 'sections/region';
+@import 'sections/cabinet';
+@import 'sections/order';
+
+
+//Pages
+@import 'pages/auth';
+@import 'pages/about';
+@import 'pages/delivery';
+@import 'pages/contacts';
+@import 'pages/ordering';

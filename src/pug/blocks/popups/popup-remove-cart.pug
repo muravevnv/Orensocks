@@ -1,0 +1,11 @@
+.popup.popup--sm.popup-bottom(id="modal-remove-cart" data-modal)
+  .popup__overlay 
+  .popup__wrapper
+    .popup__inner 
+      .popup__content 
+        button(type="button" data-modal-close).popup__close
+          +svg(24, 24, 'close')
+        .popup__subtitle Удалить сохранённые корзины?
+        .popup__controls 
+          button(type="button").popup__btn.btn.btn--outline.btn--wide Отмена
+          button(type="button").popup__btn.btn.btn--blck.btn--wide Удалить

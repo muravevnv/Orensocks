@@ -1,0 +1,22 @@
+.popup.popup--sm.popup-bottom(id="modal-contacts" data-modal)
+  .popup__overlay 
+  .popup__wrapper
+    .popup__inner 
+      .popup__content 
+        button(type="button" data-modal-close).popup__close
+          +svg(24, 24, 'close')
+        .mobile-contacts 
+          .mobile-contacts__title Открыть с помощью приложения:
+          .mobile-contacts__list 
+            a.mobile-contacts__item 
+              +svg(24, 24, 'tel')
+              span Телефон
+            a.mobile-contacts__item 
+              +svg(24, 24, 'tg')
+              span Telegram
+            a.mobile-contacts__item 
+              +svg(24, 24, 'whatsapp')
+              span Whatsapp
+            a.mobile-contacts__item 
+              +svg(24, 24, 'skype')
+              span Skype

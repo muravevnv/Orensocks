@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Корзина')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Корзина'], 'Главная')
+      include blocks/cart/cart-empty
+      include blocks/cart/cart-conditions 
+
+    include components/footer
+    include includes/scripts

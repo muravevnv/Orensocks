@@ -1,0 +1,198 @@
+section.cart 
+  .container
+    h1.h1.heading.cart__title У вас в корзине
+    .cart-main 
+      .cart-goods 
+        .cart-goods__panel 
+          .cart-goods__panel-checkbox.form-checkbox
+            input(type="checkbox" id="cart_item_all")
+            label(for="cart_item_all") Выбрать все
+          button(type="button" disabled).cart-goods__panel-btn.btn.btn--sm.btn--outline 
+            +svg(24, 24, 'trash')
+            span Удалить выбранные
+        .cart-goods__list 
+          .cart-goods__list-head 
+             .cart-goods__list-head-item Товар
+             .cart-goods__list-head-item Количество упаковок
+             .cart-goods__list-head-item Количество пар / шт
+             .cart-goods__list-head-item Цена за пару / шт
+             .cart-goods__list-head-item Цена за упаковку
+             .cart-goods__list-head-item Сумма
+             .cart-goods__list-head-item
+          .cart-goods__list-items
+            .cart-item 
+              .cart-item__main
+                .cart-item__main-info 
+                  .cart-item__main-checkbox.form-checkbox 
+                    input(type="checkbox" id="cart_item_01")
+                    label(for="cart_item_01") 
+                  picture.cart-item__main-img 
+                    source(srcset="./img/cart/img-01.webp" type="image/webp")
+                    img(src="./img/cart/img-01.jpg", alt="")
+                  a(href="#").cart-item__main-name Юста-текс мужские следки силиконовый задник 1С18. Продолж вфждвлфждлывжфлыж фывлдод фыв
+                .cart-item__main-details 
+                  .cart-item__main-detail 
+                    .cart-item__main-detail-title Цвет
+                    .cart-item__main-detail-value Чёрный
+                  .cart-item__main-detail 
+                    .cart-item__main-detail-title Размер
+                    .cart-item__main-detail-value 23-25
+              .cart-item__counter
+                .cart-item__label Количество упаковок
+                .counter 
+                  button.counter-control 
+                    +svg(24, 24, 'minus')
+                  input.counter-input(type="text" value="3" readonly)
+                  button.counter-control
+                    +svg(24, 24, 'plus')
+              .cart-item__cell
+                .cart-item__label Количество пар / шт
+                .cart-item__cell-info 
+                  b 18
+              .cart-item__cell
+                .cart-item__label Цена за пару / шт
+                .cart-item__cell-info 
+                  b 182 
+                  | ₽
+              .cart-item__cell
+                .cart-item__label Цена за упаковку
+                .cart-item__cell-info 
+                  b 1092 
+                  | ₽
+              .cart-item__cell
+                .cart-item__label Сумма
+                .cart-item__cell-info 
+                  b 3276 
+                  | ₽
+              .cart-item__cell.cart-item__cell--auto
+                button(type="button").cart-item__remove
+                  +svg(24, 24, 'trash')
+                  span Удалить
+            .cart-item 
+              .cart-item__main
+                .cart-item__main-info 
+                  .cart-item__main-checkbox.form-checkbox 
+                    input(type="checkbox" id="cart_item_02 ")
+                    label(for="cart_item_02 ") 
+                  picture.cart-item__main-img 
+                    source(srcset="./img/cart/img-02.webp" type="image/webp")
+                    img(src="./img/cart/img-02.jpg", alt="")
+                  a(href="#").cart-item__main-name Юста-текс мужские следки силиконовый задник 1С18. Продолж вфждвлфждлывжфлыж фывлдод фыв
+                .cart-item__main-details 
+                  .cart-item__main-detail 
+                    .cart-item__main-detail-title Цвет
+                    .cart-item__main-detail-value Чёрный
+                  .cart-item__main-detail 
+                    .cart-item__main-detail-title Размер
+                    .cart-item__main-detail-value 23-25
+              .cart-item__counter
+                .cart-item__label Количество упаковок
+                .counter 
+                  button.counter-control 
+                    +svg(24, 24, 'minus')
+                  input.counter-input(type="text" value="3" readonly)
+                  button.counter-control
+                    +svg(24, 24, 'plus')
+              .cart-item__cell
+                .cart-item__label Количество пар / шт
+                .cart-item__cell-info 
+                  b 18
+              .cart-item__cell
+                .cart-item__label Цена за пару / шт
+                .cart-item__cell-info 
+                  b 182 
+                  | ₽
+              .cart-item__cell
+                .cart-item__label Цена за упаковку
+                .cart-item__cell-info 
+                  b 1092 
+                  | ₽
+              .cart-item__cell
+                .cart-item__label Сумма
+                .cart-item__cell-info 
+                  b 3276 
+                  | ₽
+              .cart-item__cell.cart-item__cell--auto
+                button(type="button").cart-item__remove
+                  +svg(24, 24, 'trash')
+                  span Удалить
+            .cart-item 
+              .cart-item__main
+                .cart-item__main-info 
+                  .cart-item__main-checkbox.form-checkbox 
+                    input(type="checkbox" id="cart_item_03")
+                    label(for="cart_item_03") 
+                  picture.cart-item__main-img 
+                    source(srcset="./img/cart/img-03.webp" type="image/webp")
+                    img(src="./img/cart/img-03.jpg", alt="")
+                  a(href="#").cart-item__main-name Юста-текс мужские следки силиконовый задник 1С18. Продолж вфждвлфждлывжфлыж фывлдод фыв
+                .cart-item__main-details 
+                  .cart-item__main-detail 
+                    .cart-item__main-detail-title Цвет
+                    .cart-item__main-detail-value Чёрный
+                  .cart-item__main-detail 
+                    .cart-item__main-detail-title Размер
+                    .cart-item__main-detail-value 23-25
+              .cart-item__counter
+                .cart-item__label Количество упаковок
+                .counter 
+                  button.counter-control 
+                    +svg(24, 24, 'minus')
+                  input.counter-input(type="text" value="3" readonly)
+                  button.counter-control
+                    +svg(24, 24, 'plus')
+              .cart-item__cell
+                .cart-item__label Количество пар / шт
+                .cart-item__cell-info 
+                  b 18
+              .cart-item__cell
+                .cart-item__label Цена за пару / шт
+                .cart-item__cell-info 
+                  b 182 
+                  | ₽
+              .cart-item__cell
+                .cart-item__label Цена за упаковку
+                .cart-item__cell-info 
+                  b 14992 
+                  | ₽
+              .cart-item__cell
+                .cart-item__label Сумма
+                .cart-item__cell-info 
+                  b 50276 
+                  | ₽
+              .cart-item__cell.cart-item__cell--auto
+                button(type="button").cart-item__remove
+                  +svg(24, 24, 'trash')
+                  span Удалить
+      .cart-aside 
+        .cart-aside__promocode.cart-promocode  
+          input(type="text" placeholder="Промокод").cart-promocode__input.form-control 
+          button.cart-promocode__btn.btn Применить
+        .cart-aside__main
+          // Чтобы показать статус ошибки или успешного сохранения корзины - нужно заполнить блок -notification и добавить класс is-error или is-success соответственно. 
+          .cart-aside__main-notification 
+            | Корзина
+            span 2024-03-11_20-03-21
+            | успешно сохранена в вашем ЛК
+          .cart-aside__total 
+            .cart-aside__total-title Итого
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество позиций
+              .cart-aside__total-row-info <span>18</span>
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество товаров
+              .cart-aside__total-row-info <span>18</span> штук
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Сумма
+              .cart-aside__total-row-info <b>3276</b> ₽
+          .cart-aside__save 
+            .cart-aside__save-title Сохранить корзину
+            input(type="text" placeholder="Название корзины").cart-aside__save-input.form-control
+            button.cart-aside__save-btn.btn.btn--wide Сохранить корзину
+              span Для авторизированных пользователей 
+        .cart-aside__controls
+          button(type="button").cart-aside__btn.btn.btn--outline.btn--wide Сделать дозаказ к заказу №
+          button(type="button").cart-aside__btn.btn.btn--blck.btn--wide Перейти к оформлению

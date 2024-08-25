@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Карточка товара')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Каталог', 'Носки в подарочной упаковке', 'Мужские носки'], 'Каталог')
+      include blocks/product/product-empty-reviews
+
+    include components/footer
+    include includes/scripts

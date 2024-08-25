@@ -1,0 +1,100 @@
+section.cart 
+  .container
+    h1.h1.heading.cart__title     
+      a(href="").cart__title-back 
+        +svg(24, 24, 'arrow-link-left')
+      | Данные грузополучателя
+    .cart-main 
+      .cart-order
+        form.cart-order__form
+          .cart-order__section 
+            .form-notification
+              .form-notification__text Укажите корректный Email
+              button(type="button").form-notification__close
+                +svg(24, 24, 'close')
+            .cart-order__section-title Тип плательщика
+            .form-group 
+              .form-toggle 
+                input(type="radio", name="order_customer" id="order_customer_01" checked)
+                label(for="order_customer_01") 
+                  span.form-toggle__controller 
+                  span.form-toggle__text Юридическое лицо
+            .form-group 
+              .form-toggle 
+                input(type="radio", name="order_customer" id="order_customer_02")
+                label(for="order_customer_02") 
+                  span.form-toggle__controller 
+                  span.form-toggle__text Физическое лицо
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                input.form-control(type="text" placeholder="Фамилия") 
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                input.form-control(type="text" placeholder="Имя *") 
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                input.form-control(type="text" placeholder="Отчество") 
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                input.form-control(type="text" placeholder="E-mail*") 
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                input.form-control(type="text" placeholder="Телефон*") 
+            .form-group 
+                span.form-error
+                  +svg(24, 24, 'warning')
+                textarea.form-control(name="" cols="30" rows="6" placeholder="Комментарий") 
+          .cart-order__section 
+            .cart-order__section-title Адрес доставки заказа
+            .form-group 
+              span.form-error
+                +svg(24, 24, 'warning')
+              input.form-control(type="text" placeholder="Почтовый индекс") 
+            .form-group 
+              span.form-error
+                +svg(24, 24, 'warning')
+              input.form-control(type="text" placeholder="Область") 
+            .form-group 
+              span.form-error
+                +svg(24, 24, 'warning')
+              input.form-control(type="text" placeholder="Город") 
+            .form-group 
+              span.form-error
+                +svg(24, 24, 'warning')
+              input.form-control(type="text" placeholder="Улица") 
+            .form-group 
+              span.form-error
+                +svg(24, 24, 'warning')
+              input.form-control(type="text" placeholder="Квартира") 
+            .form-group 
+              span.form-error
+                +svg(24, 24, 'warning')
+              textarea.form-control(name="" cols="30" rows="6" type="text" placeholder="Дополнительная информация") 
+          .cart-order__bottom 
+            .form-agreement Нажимая на кнопку «Сделать заказ!» Вы даете согласие на обработку ваших персональных данных. 
+              a(href="#") Политика конфиденциальности 
+            .form-checkbox 
+              input(type="checkbox" id="subscribe_agreement" checked)
+              label(for="subscribe_agreement") Подписаться на рассылку
+          button(type="button").cart-order__btn.btn.btn--blck Сделать заказ
+      .cart-aside 
+        .cart-aside__main 
+          .cart-aside__total 
+            .cart-aside__total-title Итого в корзине
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество позиций
+              .cart-aside__total-row-info <span>18</span>
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Количество товаров
+              .cart-aside__total-row-info <span>18</span> штук
+            .cart-aside__total-row 
+              .cart-aside__total-row-label 
+                span Сумма
+              .cart-aside__total-row-info <b>3276</b> ₽

@@ -1,0 +1,118 @@
+.shop {
+
+  &__desc {
+    margin-bottom: 24px;
+    font-weight: 600;
+
+    @include media(sm) {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @include media(sm) {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 30px;
+
+    @include media(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+
+    &.is-active {
+
+      .shop__item-head {
+        border-radius: 8px;
+        background-color: var(--color-primary-hovered);
+      }
+
+      .shop__item-toggle {
+        transform: rotate(180deg);
+      }
+
+      .shop__item-list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-toggle {
+      display: none;
+
+      @include media(sm) {
+        display: block;
+      }
+    }
+
+    &-head {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 12px 5px 11px 5px;
+      border-bottom: 1px solid var(--color-border);
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: var(--transition);
+
+      @include media(sm) {
+        height: auto;
+      }
+
+      @include media(hover) {
+
+        &:hover {
+          border-radius: 8px;
+          background-color: var(--color-primary-hovered);
+        }
+      }
+    }
+
+    &-head-link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+
+      @include media(sm) {
+        font-size: 14px;
+      }
+
+      svg {
+        --size: 24px;
+        width: var(--size);
+        height: var(--size);
+        flex-shrink: 0;
+        display: block;
+      }
+    }
+
+    &-list {
+      display: none;
+    }
+
+    &-link {
+      font-size: 14px;
+      margin-top: 8px;
+      padding: 8px;
+      text-transform: uppercase;
+    }
+  }
+}

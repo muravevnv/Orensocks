@@ -1,0 +1,39 @@
+section.cart-conditions 
+  .container 
+    .cart-conditions__items
+      .cart-conditions__item.js-accordeon 
+        .cart-conditions__item-head.js-accordeon-toggle 
+          +svg(40, 40, 'box')
+          span Наличие
+          .cart-conditions__item-toggle 
+            +svg(24, 24, 'close')
+        .cart-conditions__item-info.js-accordeon-body 
+          p Если вы смогли положить товар в корзину, значит этот товар есть в наличии и по этой цене.
+      .cart-conditions__item.js-accordeon 
+        .cart-conditions__item-head.js-accordeon-toggle 
+          +svg(40, 40, 'cart')
+          span Заказ
+          .cart-conditions__item-toggle 
+            +svg(24, 24, 'close')
+        .cart-conditions__item-info.js-accordeon-body 
+          p Минимальная сумма заказа от 
+            b 3.000 руб.
+          p Для оформления заказа регистрация на сайте не обязательна.
+      .cart-conditions__item.js-accordeon
+        .cart-conditions__item-head.js-accordeon-toggle 
+          +svg(40, 40, 'delivery-car')
+          span доставка
+          .cart-conditions__item-toggle 
+            +svg(24, 24, 'close')
+        .cart-conditions__item-info.js-accordeon-body 
+          p Отправим Ваш заказ в любой регион России, включая Крымский полуостров, в любой регион Казахстана.
+          p Сотрудничаем со всеми транспортными компаниями.
+      .cart-conditions__item.js-accordeon 
+        .cart-conditions__item-head.js-accordeon-toggle 
+          +svg(40, 40, 'payment')
+          span Оплата
+          .cart-conditions__item-toggle.js-accordeon-toggle 
+            +svg(24, 24, 'close')
+        .cart-conditions__item-info.js-accordeon-body 
+          p Оплата заказа производиться после сборки товара и выставления счета. Оплата производиться на карту Сбербанка или ВТБ, а так же на расчётный счёт ИП Абдуллина Лилия Равильевна. 
+          p После оплаты заказа, пожалуйста, присылайте чеки и платежки  на электронную почту.

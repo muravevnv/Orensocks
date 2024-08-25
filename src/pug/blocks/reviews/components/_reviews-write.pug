@@ -1,0 +1,40 @@
+.reviews-write.js-reviews-write
+  .reviews-write__title.h3 Написать отзыв
+  button(type="button").reviews-write__back.js-reviews-write-close
+    +svg(24, 24, 'arrow-link-left')
+    span Написать отзыв
+  form.reviews-write__form 
+    .reviews__form-rating 
+      .form-rating 
+        span.form-rating-label Оцените по 5 бальной шкале *
+        .form-rating-controls 
+          .form-rating-control
+            input(type="radio" id="rating_01" name="rating")
+            label(for="rating_01") 
+              +svg(16, 16, 'star-stroke')
+          .form-rating-control
+            input(type="radio" id="rating_01" name="rating")
+            label(for="rating_01") 
+              +svg(16, 16, 'star-stroke')
+          .form-rating-control
+            input(type="radio" id="rating_01" name="rating")
+            label(for="rating_01") 
+              +svg(16, 16, 'star-stroke')
+          .form-rating-control
+            input(type="radio" id="rating_01" name="rating")
+            label(for="rating_01") 
+              +svg(16, 16, 'star-stroke')
+          .form-rating-control
+            input(type="radio" id="rating_01" name="rating")
+            label(for="rating_01") 
+              +svg(16, 16, 'star-stroke')
+    .form-group 
+      input.form-control(type="text" placeholder="Ваше имя *")
+    .form-group 
+      input.form-control(type="text" placeholder="Ваш e-mail *")
+    .form-group 
+      input.form-control(type="text" placeholder="Контактная информация")
+    .form-group 
+      textarea.form-control(name="" rows="6" cols="30" placeholder="Ваш отзыв *")
+    .form-tip * Пожалуйста, оцените товар и заполните все обязательные поля.
+    button(type="submit" disabled).btn.btn--blck.btn--350 Отправить

@@ -1,0 +1,15 @@
+.popup.popup--md(id="modal-confirm-code" data-modal)
+  .popup__overlay 
+  .popup__wrapper
+    .popup__inner 
+      .popup__content 
+        button(type="button" data-modal-close).popup__close
+          +svg(24, 24, 'close')
+        .popup__title Не приходит код?
+        .popup__block 
+          ul.list 
+            li Проверьте, правильно ли указана электронная почта.
+            li Убедитесь, что электронный ящик обслуживается и письмо с кодом подтверждения не попало в спам-фильтр.
+            li Убедитесь, что интернет-соединение стабильное. При нестабильном соединении письмо может потеряться. Запросите письмо с кодом еще раз или попробуйте позднее.
+        .popup__controls 
+          button(type="button").btn.btn--outline.btn--wide Закрыть 

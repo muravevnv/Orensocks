@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+  include includes/head
+  +head('Orensocks')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      include blocks/main/_hero
+      include blocks/main/_product-list
+      include blocks/main/_advantages
+      include blocks/main/_shop
+      include blocks/main/_benefits
+      include blocks/main/_new-goods
+      include blocks/main/_manufacturer
+      include blocks/main/_banner
+    include components/footer
+    include blocks/popups/popup-region
+    include blocks/popups/popup-contacts
+    include blocks/popups/region-mobile
+    include includes/scripts

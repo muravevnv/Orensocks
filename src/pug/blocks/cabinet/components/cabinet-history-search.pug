@@ -1,0 +1,43 @@
+.cabinet__section.js-tabs-content.is-active(data-content="c-history")
+  .cabinet__section-title История заказов
+  .cabinet__section-content 
+    .cabinet-history 
+      .cabinet-history__filters.cabinet-filters
+        .cabinet-filters__status
+          .cabinet-order-status 
+            .cabinet-order-status__value Статус заказа
+            button.cabinet-order-status__show-popup
+              +svg(24, 24, 'filter')
+        .cabinet-filters__searchbar
+          .searchbar.js-search
+            .searchbar__panel 
+              input(type="text" placeholder="Номер заказа").searchbar__input.form-control.js-search-input
+              button(type="button").searchbar__clear.js-search-clear
+                +svg(24, 24, 'close')
+              span.searchbar__icon 
+                  +svg(24, 24, 'search')
+        .cabinet-filters__amount-show 
+          .form-select
+            select.js-form-select(name="") 
+              option(value="1") 10
+              option(value="2") 20
+              option(value="3") 30
+      .cabinet-history__table.cabinet__table.table
+        .cabinet__table-not-found Ничего не найдено.
+        .cabinet__table-panel 
+          .cabinet__table-amounts 
+            .cabinet__table-amount-select 
+              .form-select
+                select.js-form-select(name="") 
+                  option(value="1") 10
+                  option(value="2") 20
+                  option(value="3") 30
+            .cabinet__table-amount-number 1 - 40 of 40
+          .cabinet__table-controls 
+            button(type="button" disabled).cabinet__table-control 
+              +svg(24, 24, 'arrow-left') 
+            .cabinet__table-page-number 1
+            button(type="button").cabinet__table-control  
+              +svg(24, 24, 'arrow-right')
+      .cabinet-history__cards
+        .cabinet__table-not-found Ничего не найдено.

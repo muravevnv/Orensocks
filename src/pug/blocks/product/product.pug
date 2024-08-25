@@ -1,0 +1,119 @@
+section.product 
+	.container
+		h1.product__title МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ НОСКИ В КОРОБКЕ С ДУХАМИ АССОРТИ С ПРИНТОМ ОТЛИЧНОГО КАЧЕСТВА SYLTAN 9558 в Екатеринбурге
+		.product__main
+			.product__gallery 
+				.product__labels Новинка
+				.product__gallery-slider.js-product-slider
+					button.product__gallery-slider-prev.slider-control.js-product-slider-prev
+						+svg(24, 24, 'arrow-left')
+					button.product__gallery-slider-next.slider-control.js-product-slider-next
+						+svg(24, 24, 'arrow-right')
+					.swiper-wrapper 
+						picture.product__gallery-img.swiper-slide
+							img(src="./img/product/product-01.jpg", alt="")
+						picture.product__gallery-img.swiper-slide
+							img(src="./img/product/img-01.jpg", alt="")
+						picture.product__gallery-img.swiper-slide
+							img(src="./img/product/img-02.jpg", alt="")
+					.swiper-pagination
+			.product__info 
+				.product__title МУЖСКИЕ АРОМАТИЗИРОВАННЫЕ В КОРОБКЕ ХЛОПОК НОСКИ, В ПОДАРОК ДУХИ, КАЧЕСТВО СУПЕР!!! DMDBS AF-378
+				.product__top 
+					.product__parameters 
+						.product__parameters-section
+							.product__parameters-label.product-label 
+								+svg(24, 24, 'palitra')
+								span Цвет
+							.product__parameters-list 
+								.label
+									input(type="radio", name="product_color" id="product_color_01" checked)
+									label(for="product_color_01") Чёрный
+								.label
+									input(type="radio", name="product_color" id="product_color_02")
+									label(for="product_color_02") Белый
+								.label 
+									input(type="radio", name="product_color" id="product_color_03")
+									label(for="product_color_03") Жёлтый
+								.label 
+									input(type="radio", name="product_color" id="product_color_04")
+									label(for="product_color_04") Серобуромалиновый
+								.label 
+									input(type="radio", name="product_color" id="product_color_05")
+									label(for="product_color_05") Чёрно-белый
+						.product__parameters-section
+							.product__parameters-label.product-label 
+								+svg(24, 24, 'size')
+								span Размер
+							.product__parameters-list 
+								.label 
+									input(type="radio", name="product_size" id="product_size_01" checked)
+									label(for="product_size_01") 23-25
+								.label
+									input(type="radio", name="product_size" id="product_size_02")
+									label(for="product_size_02") 27-29
+								.label
+									input(type="radio", name="product_size" id="product_size_03")
+									label(for="product_size_03") 29-31
+								.label
+									input(type="radio", name="product_size" id="product_size_04")
+									label(for="product_size_04") 31-33
+							button(type="button").product__parameters-btn.btn.btn--s.btn--border Таблица размеров
+					.product__details 
+						.product__detail 
+							.product__detail-label
+								.product-label 
+									+svg(24, 24, 'articul')
+									span Артикул
+							.product__detail-info  8727
+						.product__detail 
+							.product__detail-label
+								.product-label 
+									+svg(24, 24, 'clubok')
+									span Производитель
+							.product__detail-info Очень длинное название производителя товара
+						.product__detail 
+							.product__detail-label
+								.product-label 
+									+svg(24, 24, 'textile')
+									span Состав
+							.product__detail-info 80% Хлопок 15% Эластан 5% Полиамид
+						.product__detail 
+							.product__detail-label
+								.product-label 
+									+svg(24, 24, 'carton')
+									span Количество в упаковке
+							.product__detail-info 10 пар
+				.product__bottom 
+					.product__price 
+						.product__price-notification
+							+svg(16, 16, 'warning-small')
+							span Цена зависит от размера
+						.product__price-row
+							.product__price-num 140.24
+								span 200.24
+							.product__price-unit ₽ / пара
+					.product__panel 
+						.product__panel-counter
+							.counter 
+								button.counter-control 
+									+svg(24, 24, 'minus')
+								input.counter-input(type="text" value="3" readonly)
+								button.counter-control
+									+svg(24, 24, 'plus')
+						.product__panel-btn.btn.btn--blck В корзину
+		.product__content.js-tabs 
+			.product__content-tabs.tabs-nav 
+				button(type="button" data-control="1").tabs-nav-control.js-tabs-control.is-selected Описание
+				button(type="button" data-control="2").tabs-nav-control.js-tabs-control Видео
+				button(type="button" data-control="3").tabs-nav-control.js-tabs-control Отзывы 
+					span (3)
+			.product__content-block.tabs-content.js-tabs-content.is-active(data-content="1")
+				.product__content-desc ПОДРОСТКОВЫЕ КОЛГОТКИ 3D ИЗ МИКРОФИБРЫ 120 DEN АССОРТИ ОТЛИЧНОГО КАЧЕСТВА
+			.product__content-block.tabs-content.js-tabs-content(data-content="2")
+				.product__content-video 
+					img(src="./img/product/product-video.jpg", alt="")
+			.product__content-block.tabs-content.js-tabs-content(data-content="3")
+				.product__content-comments
+					.reviews
+						include ../reviews/reviews

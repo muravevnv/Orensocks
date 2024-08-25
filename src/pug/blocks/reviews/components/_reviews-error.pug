@@ -1,0 +1,12 @@
+.reviews-write.js-reviews-write
+  button(type="button").reviews-write__back.js-reviews-write-close
+    +svg(24, 24, 'arrow-link-left')
+    span Написать отзыв
+  .default-result
+    picture.default-result__img 
+      source(srcset="./img/cart/error.svg")
+      img(src="./img/cart/error.svg", alt="")
+    .default-result__error Кажется что-то пошло не так: не получилось отправить заказ 
+      br
+      | Попробуйте еще раз!
+    a(href="#").default-result__btn.btn.btn--outline Попробовать еще раз

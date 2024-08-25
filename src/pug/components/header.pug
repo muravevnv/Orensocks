@@ -1,0 +1,131 @@
+header.header 
+  .header__inner 
+    .container 
+      .header__top 
+        button(type="button" data-modal-target="modal-region").header__region 
+          span.header__region-city Екатеринбург
+          span.header__region-icon 
+            +svg(24, 24, 'arrow-down')
+        .header__menu.js-menu
+          nav.header__nav
+            ul.header__nav-list 
+              li.header__nav-item 
+                +svg(24, 24, 'orensocks')
+                a(href="#") О нас
+              li.header__nav-item 
+                +svg(24, 24, 'payment')
+                a(href="#") Заказ и оплата
+              li.header__nav-item
+                +svg(24, 24, 'deliver')
+                a(href="#") Доставка
+              li.header__nav-item 
+                +svg(24, 24, 'comments')
+                a(href="#") Отзывы
+              li.header__nav-item 
+                +svg(24, 24, 'location')
+                a(href="#") Контакты
+          button(type="button" data-modal-target="modal-region-mob").header__menu-region 
+            span Екатеринбург
+            +svg(24, 24, 'arrow-triangle')
+        .header__phone 
+          .header__phone-item
+            a(href="tel:+78005504998").header__phone-num 
+              +svg(24, 24, 'tel')
+              span 8 800 550 49 98
+            .header__phone-icon.js-handler(data-id="tel") 
+              +svg(24, 24, 'arrow-down')
+          .header__phone-list.js-handler-content(data-id="tel")
+            a(href="#").header__phone-num 
+              +svg(24, 24, 'whatsapp') 
+              span +7  905 885 32 73 
+            a(href="mailto:orensocks@yandex.ru").header__phone-num 
+              +svg(24, 24, 'mail') 
+              span orensocks@yandex.ru
+            a(href="#").header__phone-num 
+              +svg(24, 24, 'tel') 
+              span Чат-бот Telegram
+      .header__bottom 
+        a.header__logo(href="#")
+          img(src="./img/logo.svg", alt="")
+        .header__catalog
+          button(type="button").header__catalog-btn.js-catalog-menu-btn
+            +svg(24, 24, 'catalog') 
+            span Каталог
+          include catalog-menu
+        .header__search.js-search
+          form.header__search-form(action="") 
+            .header__search-row
+              input.header__search-input.js-search-input(type="text" placeholder="Название или артикул") 
+              button(type="button").header__search-clear.js-search-clear 
+                +svg(24, 24, 'close')
+              span.header__search-icon 
+                +svg(24, 24, 'search')
+              button(type="button").header__search-btn Найти
+            .header__search-result.js-search-result
+              .search-result-item
+                a.search-result-item__link(href="#")
+                  span.search-result-item__icon
+                    +svg(16, 16, 'search')
+                  span ДЕТСКИЕ ТРУСЫ НА ДЕВОЧКУ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТД-17
+              .search-result-item
+                a.search-result-item__link(href="#")
+                  span.search-result-item__icon
+                    +svg(16, 16, 'search')
+                  span ДЕТСКИЕ ТРУСЫ НА ДЕВОЧКУ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТД-17
+              .search-result-item
+                a.search-result-item__link(href="#")
+                  span.search-result-item__icon
+                    +svg(16, 16, 'search')
+                  span ДЕТСКИЕ ТРУСЫ НА МАЛЬЧИКА ХЛОПОК 100% РОССИЯ, РАЗМЕРЫ 26,28,30,32,34 ПО 2 ШТ. НА КАЖДЫЙ РАЗМЕР ТМ-27
+              .search-result-item
+                a.search-result-item__link(href="#")
+                  span.search-result-item__icon
+                    +svg(16, 16, 'timer')
+                  span ТРУСЫ МУЖСКИЕ
+                button(type="button").search-result-item__remove
+                  +svg(24, 24, 'close')
+              .search-result-item
+                a.search-result-item__link(href="#")
+                  span.search-result-item__icon
+                    +svg(16, 16, 'timer')
+                  span ТРУСЫ МУЖСКИЕ
+                button(type="button").search-result-item__remove
+                  +svg(24, 24, 'close')
+        .header-toolbar
+          .header-toolbar__item 
+            .header-toolbar__item-btn.js-handler(data-id="h-cabinet") 
+              +svg(36, 36, 'user')
+              span Войти
+            .header-toolbar-popup.js-handler-content(data-id="h-cabinet") 
+              .header-toolbar-popup__overlay 
+              .header-toolbar-popup__content 
+                button.header-toolbar-popup__close.js-handler-close(data-id="h-cabinet")
+                  +svg(24, 24, 'close')
+                .header-auth 
+                  .header-auth__title Войти в Личный Кабинет
+                  .header-auth__controls 
+                    a(href="#").header-auth__btn.btn.btn--wide.btn--blck Авторизация
+                    a(href="#").header-auth__btn.btn.btn--wide.btn--whte Зарегистрироваться
+          .header-toolbar__item 
+            .header-toolbar__item-btn.js-handler(data-id="h-basket")  
+              +svg(36, 36, 'basket')
+              span Корзина
+              span.header-toolbar__item-counter 10
+            .header-toolbar-popup.js-handler-content(data-id="h-basket") 
+              .header-toolbar-popup__overlay 
+              .header-toolbar-popup__content.header-basket 
+                button.header-toolbar-popup__close.js-handler-close(data-id="h-basket")
+                  +svg(24, 24, 'close')
+                .header-basket__title В вашей корзине:
+                .header-basket__row.header-basket__amoun 
+                  .header-basket__row-title Товаров
+                  .header-basket__row-info 10 шт.
+                .header-basket__row.header-basket__price 
+                  .header-basket__row-title На сумму
+                  .header-basket__row-info <b>140.24</b> ₽
+                .header-basket__row.header-basket__min
+                  .header-basket__row-title Минимальная <br> сумма заказа
+                  .header-basket__row-info от <b>3 000</b> ₽ 
+                a.header-basket__btn.btn.btn--blck.btn--wide Перейти в корзину
+        button.header__burger.js-menu-btn
+          span 

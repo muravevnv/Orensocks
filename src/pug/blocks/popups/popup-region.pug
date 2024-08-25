@@ -1,0 +1,75 @@
+.popup(id="modal-region" data-modal)
+  .popup__overlay 
+  .popup__wrapper
+    .popup__inner 
+      .popup__content 
+        button(type="button" data-modal-close).popup__close
+          +svg(24, 24, 'close')
+        .popup__heading 
+          .popup__title Выберите ваше местоположение
+        .region 
+          .region__searchbar 
+            .searchbar.js-search
+              .searchbar__panel 
+                input(type="text" placeholder="Поиск города или региона").searchbar__input.form-control.js-search-input
+                button(type="button").searchbar__clear.js-search-clear
+                  +svg(24, 24, 'close')
+                span.searchbar__icon 
+                  +svg(24, 24, 'search')
+              .searchbar__result-popup.js-search-result
+                .searchbar__result-region-item 
+                  .searchbar__result-region-item-city Алапаевск
+                  .searchbar__result-region-item-area Свердловская область
+          .region__content 
+            .region__col 
+              .region__section 
+                .region__section-letter A
+                .region__section-list 
+                  .region__section-item Алтайский край
+                  .region__section-item Амурская область
+                  .region__section-item Архангельская область
+                  .region__section-item Астраханская область
+              .region__section 
+                .region__section-letter Б
+                .region__section-list 
+                  .region__section-item Белгородская область
+                  .region__section-item Брянская область
+              .region__section 
+                .region__section-letter B
+                .region__section-list 
+                  .region__section-item Владимирская область
+                  .region__section-item Волгоградская область
+                  .region__section-item Вологодская область
+                  .region__section-item Воронежская область
+              .region__section 
+                .region__section-letter A
+                .region__section-list 
+                  .region__section-item Алтайский край
+                  .region__section-item Амурская область
+                  .region__section-item Архангельская область
+                  .region__section-item Астраханская область
+              .region__section 
+                .region__section-letter Б
+                .region__section-list 
+                  .region__section-item Белгородская область
+                  .region__section-item Брянская область
+              .region__section 
+                .region__section-letter B
+                .region__section-list 
+                  .region__section-item Владимирская область
+                  .region__section-item Волгоградская область
+                  .region__section-item Вологодская область
+                  .region__section-item Воронежская область
+            .region__col 
+              .region__city 
+                .region__city-item.is-selected Екатеринбург
+                .region__city-item Алапаевск
+                .region__city-item Дегтярск
+                .region__city-item Каменск-Уральский
+                .region__city-item Нижний Тагил
+                .region__city-item Первоуральск
+                .region__city-item Полевской
+                .region__city-item Реж
+                .region__city-item Совхозный
+                .region__city-item Шабровский
+

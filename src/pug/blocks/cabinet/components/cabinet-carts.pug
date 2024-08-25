@@ -1,0 +1,184 @@
+.cabinet__section.js-tabs-content(data-content="c-carts") 
+  .cabinet__section-title Сохранённые корзины
+  .cabinet__section-content 
+    .cabinet-carts
+      .cabinet-carts__notification 
+        .cabinet-carts__notification-title Корзина 30.03.2024 13:13 загружена
+        a(href="#").cabinet-carts__notification-order 
+          span Перейти к заказу
+          +svg(24, 24, 'arrow-right')
+        button(type="button").cabinet-carts__notification-close
+          +svg(24, 24, 'close')
+      .cabinet-carts__filters.cabinet-filters
+        .cabinet-filters__choose-all 
+          .form-checkbox 
+            input(type="checkbox", name="" id="c_carts_all")
+            label(for="c_carts_all") Выбрать все
+        button(type="button" disabled).btn.btn--outline.cabinet-filters__remove-choosen 
+          +svg(24, 24, 'trash')
+          span Удалить выбранные
+      .cabinet-carts__table.cabinet__table.table
+        table 
+          thead
+            tr 
+              th 
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Дата
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Название
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Товаров
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th 
+                .table-cell-head 
+                  .table-cell-head__name Сумма на момент сохранения
+                  .table-cell-head__sorting 
+                    button(type="button").table-cell-head__sorting-up
+                      +svg(8, 5, 'polygon-up')
+                    button(type="button").table-cell-head__sorting-down
+                      +svg(8, 5, 'polygon-down')
+              th Действия
+          tbody
+            tr 
+              td 
+                .table-checkbox
+                  .form-checkbox 
+                    input(type="checkbox", name="" id="c_carts_01")
+                    label(for="c_carts_01")
+              td 
+                .table-cell-datetime 11.03.24
+                  span 20:20
+              td 27.03.2024 07:31
+              td 276   
+              td 273 ₽
+              td 
+                .table-controls 
+                  button.btn.btn--blck Загрузить
+                  button.btn.btn--transparent
+                    +svg(24, 24, 'trash')
+                    span Удалить
+            tr 
+              td 
+                .table-checkbox
+                  .form-checkbox 
+                    input(type="checkbox", name="" id="c_carts_02")
+                    label(for="c_carts_02")
+              td 
+                .table-cell-datetime 11.03.24
+                  span 20:20
+              td 27.03.2024 07:31
+              td 276   
+              td 273 ₽
+              td 
+                .table-controls 
+                  button.btn.btn--blck Загрузить
+                  button.btn.btn--transparent
+                    +svg(24, 24, 'trash')
+                    span Удалить
+            tr 
+              td 
+                .table-checkbox
+                  .form-checkbox 
+                    input(type="checkbox", name="" id="c_carts_03")
+                    label(for="c_carts_03")
+              td 
+                .table-cell-datetime 11.03.24
+                  span 20:20
+              td 27.03.2024 07:31
+              td 276   
+              td 273 ₽
+              td 
+                .table-controls 
+                  button.btn.btn--blck Загрузить
+                  button.btn.btn--transparent
+                    +svg(24, 24, 'trash')
+                    span Удалить
+        .table-panel 
+          .table-panel__amounts 
+            .table-panel__amount-select 
+              .form-select
+                select.js-form-select(name="") 
+                  option(value="1") 10
+                  option(value="2") 20
+                  option(value="3") 30
+            .table-panel__amount-number 1 - 40 of 40
+          .table-panel__controls 
+            button(type="button" disabled).table-panel__control 
+              +svg(24, 24, 'arrow-left') 
+            .table-panel__page-number 1
+            button(type="button").table-panel__control  
+              +svg(24, 24, 'arrow-right')
+      .cabinet-carts__items
+        .cabinet-cart-item 
+          .cabinet-cart-item__checkbox 
+            .form-checkbox 
+              input(type="checkbox", name="" id="c_carts_11")
+              label(for="c_carts_11")
+          .cabinet-cart-item__details
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Дата 
+              .cabinet-cart-item__detail-info 11.03.24
+                span 20:20
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Название
+              .cabinet-cart-item__detail-info 27.03.2024 07:31
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Товаров
+              .cabinet-cart-item__detail-info 276
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Сумма на момент сохранения
+              .cabinet-cart-item__detail-info 273
+          .cabinet-cart-item__controls 
+            button(type="button").cabinet-cart-item__download.btn.btn--blck Загрузить
+            button(type="button").cabinet-cart-item__remove.btn.btn--transparent
+              +svg(24, 24, 'trash')
+              span Удалить
+        .cabinet-cart-item 
+          .cabinet-cart-item__checkbox 
+            .form-checkbox 
+              input(type="checkbox", name="" id="c_carts_11")
+              label(for="c_carts_11")
+          .cabinet-cart-item__details
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Дата 
+              .cabinet-cart-item__detail-info 11.03.24
+                span 20:20
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Название
+              .cabinet-cart-item__detail-info 27.03.2024 07:31
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Товаров
+              .cabinet-cart-item__detail-info 276
+            .cabinet-cart-item__detail 
+              .cabinet-cart-item__detail-title 
+                span Сумма на момент сохранения
+              .cabinet-cart-item__detail-info 273
+          .cabinet-cart-item__controls 
+            button(type="button").cabinet-cart-item__download.btn.btn--blck Загрузить
+            button(type="button").cabinet-cart-item__remove.btn.btn--transparent
+              +svg(24, 24, 'trash')
+              span Удалить

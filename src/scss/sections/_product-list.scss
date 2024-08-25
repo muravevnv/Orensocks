@@ -1,0 +1,43 @@
+.main-products {
+
+  &__slider {
+    overflow: hidden;
+  }
+}
+
+.new-goods {
+
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    padding: 0 15px;
+    margin: 0 -15px;
+    
+    @include media(lg) {
+      padding: 0;
+      margin: 0;
+    }
+
+    &-prev {
+      position: absolute;
+      left: 0;
+      z-index: 3;
+      top: 110px;
+
+      @include media(lg) {
+        display: none;
+      }
+    }
+
+    &-next {
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      top: 110px;
+
+      @include media(lg) {
+        display: none;
+      }
+    }
+  }
+}

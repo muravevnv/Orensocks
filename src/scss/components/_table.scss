@@ -1,0 +1,205 @@
+.table {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    text-align: left;
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include media(md)  {
+      padding: 12px 4px;
+    }
+  }
+
+  td {
+    padding: 18px 8px;
+
+    @include media(md) {
+      font-size: 14px;
+      padding: 16px 4px;
+    }
+
+    a {
+      color: var(--color-blue);
+    }
+  }
+
+  tr {  
+
+    > * {
+      &:first-of-type {
+        border-radius: 8px 0 0 8px; 
+      }
+
+      &:last-of-type {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+
+    th {
+      background-color: var(--color-border);
+    }
+
+    &:nth-of-type(even) {
+      td {
+        background-color: var(--color-grey-bg);
+      }
+    }
+  }
+}
+
+.table-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-checkbox {
+  --size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+
+  .form-checkbox label {
+    width: var(--size);
+    height: var(--size);
+  }
+}
+
+.table-cell-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--color-alt);
+
+  @include media(md)  {
+    font-size: 12px;
+  }
+
+  &__sorting {
+    --size: 16px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    > * {
+      width: 8px;
+      height: 4px;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+}
+
+.table-info {
+  position: relative;
+
+  &:hover {
+
+    .table-info__tip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__tip {
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    font-size: 11px;
+    background-color: #3D3B3C;
+    color: var(--color-whte);
+    padding: 8px;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -7px;
+      top: 12px;
+      width: 8px;
+      height: 8px;
+      background: url('../img/icons/tip-triangle.svg') center center / 7px no-repeat;
+    }
+  }
+
+  &__btn {
+    --size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    color: var(--color-whte);
+    background-color: #3D3B3C;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+
+.table-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-top: 8px;
+  border-top: 1px solid var(--color-border);
+
+  @include media(sm) {
+    display: none;
+  }
+
+  &__amounts {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__amount-number {
+    font-size: 14px;
+    color: var(--color-alt);
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__control {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+
+    &:disabled, 
+    &[disabled] {
+      pointer-events: none;
+      color: var(--color-alt);
+      opacity: .5;
+    }
+  }
+
+  &__page-number {
+    font-size: 14px;
+    color: var(--color-alt)
+  }
+}
+

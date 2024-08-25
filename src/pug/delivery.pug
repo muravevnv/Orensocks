@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Доставка')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Доставка'])
+      +heading('Доставка')
+      include blocks/delivery/delivery
+
+    include components/footer
+    include includes/scripts

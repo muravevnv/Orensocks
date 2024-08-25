@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Корзина')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Корзина'], 'Главная')
+      .container 
+        div(style="display: flex; flex-wrap: wrap; gap: 8px;")
+          button(type="button" data-modal-target="modal-confirm-code" class="btn btn--blck") Не приходит код ?
+          button(type="button" data-modal-target="modal-exit-cabinet" class="btn btn--blck") Выйти из ЛК
+          button(type="button" data-modal-target="modal-remove-from-cart" class="btn btn--blck") Удалить из корзины
+          button(type="button" data-modal-target="modal-remove-cart" class="btn btn--blck") Удалить сохраненную корзину
+          button(type="button" data-modal-target="modal-save-cart" class="btn btn--blck") Сохранить корзину
+          button(type="button" data-modal-target="modal-region" class="btn btn--blck") Выбрать город
+          button(type="button" data-modal-target="modal-order" class="btn btn--blck") Информация о заказе
+      include blocks/popups/popup-region
+      include blocks/popups/popup-confirm-code
+      include blocks/popups/popup-exit-cabinet
+      include blocks/popups/popup-remove-from-cart
+      include blocks/popups/popup-remove-cart
+      include blocks/popups/popup-save-cart
+      include blocks/popups/region-mobile
+      include blocks/popups/popup-order
+    include components/footer
+    include includes/scripts
