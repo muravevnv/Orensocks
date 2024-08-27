@@ -345,6 +345,16 @@
       margin-bottom: 8px;
     }
   }
+
+  &__items {
+    margin: 0 -16px;
+    width: calc(100% + 32px);
+
+    @include media(md) {
+      margin: 0;
+      width: 100%;
+    }
+  }
 }
 
 .catalog-cards {

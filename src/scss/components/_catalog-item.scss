@@ -1,5 +1,5 @@
 .catalog-item {
-  padding: 16px 0;
+  padding: 16px;
   border-bottom: 1px solid var(--color-border);
   position: relative;
   display: flex;
@@ -11,7 +11,12 @@
 
     &:hover {
       background-color: var(--color-primary-hovered);
+      border-radius: 8px;
     }
+  }
+
+  @include media(md) {
+    padding: 16px 0;
   }
 
   @include media(sm) {
@@ -26,6 +31,10 @@
     align-items: center;
     justify-content: center;
     aspect-ratio: 1 / 1;
+
+    @include media(sm) {
+      margin-bottom: 10px;
+    }
 
     img {
       border-radius: 8px;
