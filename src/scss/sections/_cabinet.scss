@@ -87,6 +87,10 @@
 
   &__table {
 
+    @include media(sm) {
+      display: none;
+    }
+    
     &-not-found {
       height: 180px;
       display: flex;
@@ -124,13 +128,6 @@
 
 .cabinet-history {
 
-  &__table {
-
-    @include media(sm) {
-      display: none;
-    }
-  }
-
   &__cards {
     display: none;
     
@@ -143,50 +140,6 @@
 
   &__filters {
     margin-bottom: 8px;
-  }
-}
-
-.cabinet-history-card {
-  padding: 8px 0 12px;
-  border-bottom: 1px solid var(--color-border);
-
-  &__detail {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 0;
-    color: var(--color-alt);
-
-    &-title {
-      width: 100%;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-
-      span {
-        flex-shrink: 0;
-      }
-
-      &::after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        border: 1px dashed currentColor;
-      }
-    }
-
-    &-info {
-      flex-shrink: 0;
-      text-align: right;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--color-blck);
-    }
-  }
-  
-  &__btn {
-    margin-top: 4px;
   }
 }
 
@@ -258,12 +211,6 @@
 
 .cabinet-carts {
 
-  &__table {
-    @include media(sm) {
-      display: none;
-    }
-  }
-
   &__items {
     display: none;
 
@@ -333,72 +280,6 @@
       width: var(--size);
       height: var(--size);
     }
-  }
-}
-
-.cabinet-cart-item {
-  padding: 8px 4px 20px;
-  border-bottom: 1px solid var(--color-border);
-  position: relative;
-
-  &__checkbox {
-    position: absolute;
-    left: 4px;
-    right: 16px;
-  }
-
-  &__details {
-    padding-left: 30px;
-  }
-
-  &__detail {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 0;
-    color: var(--color-alt);
-
-    &-title {
-      width: 100%;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-
-      span {
-        flex-shrink: 0;
-      }
-
-      &::after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        border: 1px dashed currentColor;
-      }
-    }
-
-    &-info {
-      flex-shrink: 0;
-      text-align: right;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--color-blck);
-    }
-  }
-  
-  &__controls {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  &__remove {
-    flex-shrink: 0;
-  }
-
-  &__download {
-    width: 100%;
   }
 }
 

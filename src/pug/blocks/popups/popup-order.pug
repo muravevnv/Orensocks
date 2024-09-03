@@ -9,7 +9,7 @@
           .order__heading-icon 
             +svg(24, 24, 'arrow-link-left')
           .order__heading-title заказ № 2403/142
-        .order__main  
+        .order__main.js-tabs  
           .order__nav 
             button(type="button" data-control="order-info").order__nav-btn.js-tabs-control.is-selected Заказ
             button(type="button" data-control="order-goods").order__nav-btn.js-tabs-control Покупки
@@ -293,8 +293,7 @@
                   .table-info-card__detail   
                     .table-info-card__detail-title                   
                       span Стоимость
-                    .table-info-card__detail-desc 275 ₽
-                  
+                    .table-info-card__detail-desc 275 ₽       
           .order__content.js-tabs-content(data-content="order-adress")
             .order__details 
               .order__detail 

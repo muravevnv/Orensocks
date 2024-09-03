@@ -682,8 +682,18 @@
                 <div class="cabinet-history__filters cabinet-filters">
                   <div class="cabinet-filters__status">
                     <div class="cabinet-order-status"> 
-                      <div class="cabinet-order-status__value">Статус заказа</div>
-                      <button class="cabinet-order-status__show-popup">
+                      <div class="cabinet-order-status__select">
+                        <div class="form-select">
+                          <select class="js-form-select" name=""> 
+                            <option value="1">Все</option>
+                            <option value="2">Новый</option>
+                            <option value="3">Принят к оплате</option>
+                            <option value="3">Оплачен</option>
+                            <option value="3">Отправлен</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button class="cabinet-order-status__show-popup" data-modal-target="modal-status-select">
                             <svg width="24" height="24">
                               <use xlink:href="img/icons/icons.svg#filter"></use>
                             </svg>
@@ -715,11 +725,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="cabinet-history__table cabinet__table table">
+                <div class="cabinet__table table">
                   <div class="cabinet__table-not-found">Ничего не найдено.</div>
-                  <div class="cabinet__table-panel"> 
-                    <div class="cabinet__table-amounts"> 
-                      <div class="cabinet__table-amount-select"> 
+                  <div class="table-panel"> 
+                    <div class="table-panel__amounts"> 
+                      <div class="table-panel__amount-select"> 
                         <div class="form-select">
                           <select class="js-form-select" name=""> 
                             <option value="1">10</option>
@@ -728,16 +738,16 @@
                           </select>
                         </div>
                       </div>
-                      <div class="cabinet__table-amount-number">1 - 40 of 40</div>
+                      <div class="table-panel__amount-number">1 - 40 of 40</div>
                     </div>
-                    <div class="cabinet__table-controls"> 
-                      <button class="cabinet__table-control" type="button" disabled> 
+                    <div class="table-panel__controls"> 
+                      <button class="table-panel__control" type="button" disabled> 
                             <svg width="24" height="24">
                               <use xlink:href="img/icons/icons.svg#arrow-left"></use>
                             </svg>
                       </button>
-                      <div class="cabinet__table-page-number">1</div>
-                      <button class="cabinet__table-control" type="button"> 
+                      <div class="table-panel__page-number">1</div>
+                      <button class="table-panel__control" type="button"> 
                             <svg width="24" height="24">
                               <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                             </svg>
@@ -779,7 +789,7 @@
                         </svg><span>Удалить выбранные</span>
                   </button>
                 </div>
-                <div class="cabinet-carts__table cabinet__table table">
+                <div class="cabinet__table table">
                   <table> 
                     <thead>
                       <tr> 
@@ -965,68 +975,36 @@
                   </div>
                 </div>
                 <div class="cabinet-carts__items">
-                  <div class="cabinet-cart-item"> 
-                    <div class="cabinet-cart-item__checkbox"> 
-                      <div class="form-checkbox"> 
-                        <input type="checkbox" name="" id="c_carts_11">
-                        <label for="c_carts_11"></label>
+                  <div class="table-info-card"> 
+                    <div class="table-info-card__main">
+                      <div class="table-info-card__checkbox"> 
+                        <div class="form-checkbox"> 
+                          <input type="checkbox" name="" id="c_carts_11">
+                          <label for="c_carts_11"></label>
+                        </div>
+                      </div>
+                      <div class="table-info-card__details">
+                        <div class="table-info-card__detail"> 
+                          <div class="table-info-card__detail-title"> <span>Дата </span></div>
+                          <div class="table-info-card__detail-desc">11.03.24<span>20:20</span></div>
+                        </div>
+                        <div class="table-info-card__detail"> 
+                          <div class="table-info-card__detail-title"> <span>Название</span></div>
+                          <div class="table-info-card__detail-desc">27.03.2024 07:31</div>
+                        </div>
+                        <div class="table-info-card__detail"> 
+                          <div class="table-info-card__detail-title"> <span>Товаров</span></div>
+                          <div class="table-info-card__detail-desc">276</div>
+                        </div>
+                        <div class="table-info-card__detail"> 
+                          <div class="table-info-card__detail-title"> <span>Сумма на момент сохранения</span></div>
+                          <div class="table-info-card__detail-desc">273</div>
+                        </div>
                       </div>
                     </div>
-                    <div class="cabinet-cart-item__details">
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Дата </span></div>
-                        <div class="cabinet-cart-item__detail-info">11.03.24<span>20:20</span></div>
-                      </div>
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Название</span></div>
-                        <div class="cabinet-cart-item__detail-info">27.03.2024 07:31</div>
-                      </div>
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Товаров</span></div>
-                        <div class="cabinet-cart-item__detail-info">276</div>
-                      </div>
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Сумма на момент сохранения</span></div>
-                        <div class="cabinet-cart-item__detail-info">273</div>
-                      </div>
-                    </div>
-                    <div class="cabinet-cart-item__controls"> 
-                      <button class="cabinet-cart-item__download btn btn--blck" type="button">Загрузить</button>
-                      <button class="cabinet-cart-item__remove btn btn--transparent" type="button">
-                            <svg width="24" height="24">
-                              <use xlink:href="img/icons/icons.svg#trash"></use>
-                            </svg><span>Удалить</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="cabinet-cart-item"> 
-                    <div class="cabinet-cart-item__checkbox"> 
-                      <div class="form-checkbox"> 
-                        <input type="checkbox" name="" id="c_carts_11">
-                        <label for="c_carts_11"></label>
-                      </div>
-                    </div>
-                    <div class="cabinet-cart-item__details">
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Дата </span></div>
-                        <div class="cabinet-cart-item__detail-info">11.03.24<span>20:20</span></div>
-                      </div>
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Название</span></div>
-                        <div class="cabinet-cart-item__detail-info">27.03.2024 07:31</div>
-                      </div>
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Товаров</span></div>
-                        <div class="cabinet-cart-item__detail-info">276</div>
-                      </div>
-                      <div class="cabinet-cart-item__detail"> 
-                        <div class="cabinet-cart-item__detail-title"> <span>Сумма на момент сохранения</span></div>
-                        <div class="cabinet-cart-item__detail-info">273</div>
-                      </div>
-                    </div>
-                    <div class="cabinet-cart-item__controls"> 
-                      <button class="cabinet-cart-item__download btn btn--blck" type="button">Загрузить</button>
-                      <button class="cabinet-cart-item__remove btn btn--transparent" type="button">
+                    <div class="table-info-card__controls"> 
+                      <button class="table-info-card__download btn btn--blck" type="button">Загрузить</button>
+                      <button class="table-info-card__remove btn btn--transparent" type="button">
                             <svg width="24" height="24">
                               <use xlink:href="img/icons/icons.svg#trash"></use>
                             </svg><span>Удалить</span>

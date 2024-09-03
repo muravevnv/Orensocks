@@ -17,7 +17,7 @@
         button(type="button" disabled).btn.btn--outline.cabinet-filters__remove-choosen 
           +svg(24, 24, 'trash')
           span Удалить выбранные
-      .cabinet-carts__table.cabinet__table.table
+      .cabinet__table.table
         table 
           thead
             tr 
@@ -126,59 +126,32 @@
             button(type="button").table-panel__control  
               +svg(24, 24, 'arrow-right')
       .cabinet-carts__items
-        .cabinet-cart-item 
-          .cabinet-cart-item__checkbox 
-            .form-checkbox 
-              input(type="checkbox", name="" id="c_carts_11")
-              label(for="c_carts_11")
-          .cabinet-cart-item__details
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Дата 
-              .cabinet-cart-item__detail-info 11.03.24
-                span 20:20
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Название
-              .cabinet-cart-item__detail-info 27.03.2024 07:31
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Товаров
-              .cabinet-cart-item__detail-info 276
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Сумма на момент сохранения
-              .cabinet-cart-item__detail-info 273
-          .cabinet-cart-item__controls 
-            button(type="button").cabinet-cart-item__download.btn.btn--blck Загрузить
-            button(type="button").cabinet-cart-item__remove.btn.btn--transparent
-              +svg(24, 24, 'trash')
-              span Удалить
-        .cabinet-cart-item 
-          .cabinet-cart-item__checkbox 
-            .form-checkbox 
-              input(type="checkbox", name="" id="c_carts_11")
-              label(for="c_carts_11")
-          .cabinet-cart-item__details
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Дата 
-              .cabinet-cart-item__detail-info 11.03.24
-                span 20:20
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Название
-              .cabinet-cart-item__detail-info 27.03.2024 07:31
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Товаров
-              .cabinet-cart-item__detail-info 276
-            .cabinet-cart-item__detail 
-              .cabinet-cart-item__detail-title 
-                span Сумма на момент сохранения
-              .cabinet-cart-item__detail-info 273
-          .cabinet-cart-item__controls 
-            button(type="button").cabinet-cart-item__download.btn.btn--blck Загрузить
-            button(type="button").cabinet-cart-item__remove.btn.btn--transparent
+        .table-info-card 
+          .table-info-card__main
+            .table-info-card__checkbox 
+              .form-checkbox 
+                input(type="checkbox", name="" id="c_carts_11")
+                label(for="c_carts_11")
+            .table-info-card__details
+              .table-info-card__detail 
+                .table-info-card__detail-title 
+                  span Дата 
+                .table-info-card__detail-desc 11.03.24
+                  span 20:20
+              .table-info-card__detail 
+                .table-info-card__detail-title 
+                  span Название
+                .table-info-card__detail-desc 27.03.2024 07:31
+              .table-info-card__detail 
+                .table-info-card__detail-title 
+                  span Товаров
+                .table-info-card__detail-desc 276
+              .table-info-card__detail 
+                .table-info-card__detail-title 
+                  span Сумма на момент сохранения
+                .table-info-card__detail-desc 273
+          .table-info-card__controls 
+            button(type="button").table-info-card__download.btn.btn--blck Загрузить
+            button(type="button").table-info-card__remove.btn.btn--transparent
               +svg(24, 24, 'trash')
               span Удалить

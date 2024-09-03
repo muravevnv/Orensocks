@@ -340,11 +340,13 @@ if(formSelects.length) {
   })
 }
 
-const tabsSections = document.querySelector('.js-tabs');
+const tabsSections = document.querySelectorAll('.js-tabs');
 
-if(tabsSections) {
-  const tabControls = document.querySelectorAll('.js-tabs-control');
-  const tabContents = document.querySelectorAll('.js-tabs-content');
+if(tabsSections.length > 0) {
+  
+tabsSections.forEach( (section) => {
+  const tabControls = section.querySelectorAll('.js-tabs-control');
+  const tabContents = section.querySelectorAll('.js-tabs-content');
 
   console.log(tabControls);
 
@@ -365,6 +367,7 @@ if(tabsSections) {
       tab.classList.remove('is-active');
     })
   }
+})
 }
 
 

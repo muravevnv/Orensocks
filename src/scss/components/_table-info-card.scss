@@ -42,4 +42,34 @@
       color: var(--color-blck);
     }
   }
+
+  &__main {
+    padding-left: 32px;
+    position: relative;
+  }
+
+  &__btn {
+    margin-top: 16px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: 4px;
+    top: 8px;
+  }
+
+  &__controls {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__remove {
+    flex-shrink: 0;
+  }
+
+  &__download {
+    width: 100%;
+  }
 }
