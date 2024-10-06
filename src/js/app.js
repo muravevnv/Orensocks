@@ -256,6 +256,14 @@ if(catalogBtn.length) {
   catalogMenuClose.addEventListener('click', () => {
     catalogMenu.classList.remove('is-open');
   })
+
+  document.addEventListener('click', (e) => {
+    console.log(e.target)
+    if(!catalogBtn[0].contains(e.target) && !catalogBtn[1].contains(e.target) && !catalogMenu.contains(e.target)) {
+      catalogMenu.classList.remove('is-open'); 
+    }
+  })
+
 }
 
 const catalogMenuItems = document.querySelectorAll('.js-catalog-menu-item');
@@ -516,6 +524,7 @@ if(reviewsWrite) {
 
 
 const modals = document.querySelectorAll('[data-modal]');
+const body = document.querySelector('body');
 
 if(modals.length > 0) {
 
@@ -523,20 +532,27 @@ if(modals.length > 0) {
 
   function openModal(modal) {
     modal.classList.add('is-open');
-    document.body.classList.add('no-scroll');
+    body.classList.add('no-scroll');
   }
   
   // Функция закрытия модального окна
   function closeModal(modal) {
     modal.classList.remove('is-open');
-    document.body.classList.remove('no-scroll');
+    body.classList.remove('no-scroll');
   }
   
   modals.forEach((modal) => {
+    const modalInner = modal.querySelector('.popup__inner');
     const openButton = document.querySelector(`[data-modal-target="${modal.id}"]`);
     openButton.addEventListener('click', () => {
       openModal(modal);
     });
+
+    document.addEventListener('click', (e) => {
+      if(e.target === modalInner) {
+        closeModal(modal);
+      }
+    })
   });
   
   modalCloseBtn.forEach((btn) => {
@@ -545,10 +561,18 @@ if(modals.length > 0) {
       closeModal(modal);
     });
   });
-
 } 
 
-// Функция открытия модального окна
+const scrollBtnUp = document.querySelector('[data-scroll-up]')
+
+if(scrollBtnUp) {
+  scrollBtnUp.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+}
 
 // const map = document.querySelector('.js-map');
 

@@ -55,7 +55,7 @@
     height: 100vh;
     z-index: 3;
     padding: 16px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   &__inner {

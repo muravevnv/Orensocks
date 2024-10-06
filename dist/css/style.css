@@ -1413,6 +1413,8 @@ button.swiper-pagination-bullet {
   --color-whte--rgb: 255, 255, 255;
   --color-blck: #1D1515;
   --color-blck--rgb: 29, 21, 21;
+  --color-blck-hover: #3D3B3C;
+  --color-blck-hover--rgb: 61, 59, 60;
   --color-drk: #2F4252;
   --color-drk--rgb: 47, 66, 82;
   --color-alt: #5D6063;
@@ -1657,6 +1659,13 @@ body {
 body.no-scroll {
   height: 100vh;
   overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+  padding-right: 18px;
+}
+
+body.no-scroll .header {
+  padding-right: 25px;
 }
 
 main {
@@ -2917,10 +2926,28 @@ textarea.form-control {
   width: var(--size);
   flex-shrink: 0;
   cursor: pointer;
+  z-index: 2;
 }
 
 .header-toolbar__item-btn span {
   font-size: 11px;
+}
+
+.header-toolbar__item-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  --size: 80px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: var(--color-primary-hovered);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.25s ease-in-out;
 }
 
 .header-toolbar__item-counter {
@@ -3133,6 +3160,21 @@ textarea.form-control {
   margin-bottom: 4px;
 }
 
+.scroll-up-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 113px;
+  --size: 44px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--color-blck);
+  transition: 0.25s ease-in-out;
+}
+
 .breadcrumbs {
   margin: 24px 0;
 }
@@ -3206,7 +3248,7 @@ textarea.form-control {
   height: 100vh;
   z-index: 3;
   padding: 16px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .popup__inner {
@@ -6769,6 +6811,10 @@ textarea.form-control {
     gap: 24px;
   }
 
+  .scroll-up-btn {
+    display: none;
+  }
+
   .banner__desc {
     display: none;
   }
@@ -6888,6 +6934,14 @@ textarea.form-control {
 @media (max-width: 1023px) {
   body {
     padding-top: 0;
+  }
+
+  body.no-scroll {
+    padding-right: 0;
+  }
+
+  body.no-scroll .header {
+    padding-right: 0;
   }
 
   .container {
@@ -8450,6 +8504,20 @@ textarea.form-control {
     background-color: var(--color-whte);
     border-color: var(--color-whte);
     color: var(--color-blck);
+  }
+
+  .btn--blck:hover {
+    background-color: var(--color-blck-hover);
+    color: var(--color-whte);
+  }
+
+  .header-toolbar__item-btn:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .scroll-up-btn:hover {
+    background-color: var(--color-primary);
   }
 }
 

@@ -15,13 +15,13 @@ footer.footer
           p Заказы принимаются круглосуточно
       .footer__section.footer__contacts 
         .footer__section-icon 
-          +svg(24, 24, 'tel')
+          +svg(24, 24, 'tel-stroke')
         .footer__section-info
           a(href="tel:8 800 550-49-98 ") 
-            span 8 800 550-49-98 
+            span 8 800 550-49-98  
             | (Звонок бесплатный)
           a(href="tel:8 800 550-49-98 ") 
-            span +7 987 874-14-20
+            span +7 987 874-14-20 
             | (Лилия)
     .footer__desc 
       p Носки оптом от производителя можно купить здесь - "ORENSOCKS"  © Все права защищены.
@@ -44,3 +44,5 @@ footer.footer
       +svg(24, 24, 'basket')
     span.mobile-nav__item-title Корзина
     span.mobile-nav__item-counter 10
+button(type="button" data-scroll-up).scroll-up-btn
+  +svg(24, 24, 'arrow-up')

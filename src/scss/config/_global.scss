@@ -47,6 +47,21 @@ body {
   &.no-scroll {
     height: 100vh;
     overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+    padding-right: 18px;
+
+    .header {
+      padding-right: 25px;
+    }
+
+    @include media(md) {
+      padding-right: 0;
+
+      .header {
+        padding-right: 0;
+      }
+    }
   }
 }
 

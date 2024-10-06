@@ -48,6 +48,13 @@
     background-color: var(--color-blck);
     border-color: var(--color-blck);
     color: var(--color-whte);
+
+    @media(any-hover: hover) {
+      &:hover {
+        background-color: var(--color-blck-hover);
+        color: var(--color-whte);
+      }
+    }
   }
 
   &--whte {
