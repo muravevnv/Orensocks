@@ -384,7 +384,6 @@ if(document.querySelector('.js-catalog')) {
   const catalogFilter = document.querySelector('.js-catalog-filter');
   const catalogFilterOpen = document.querySelector('.js-catalog-filter-open');
   const catalogFilterClose = document.querySelectorAll('.js-catalog-filter-close');
-  const catalogFilterClear = document.querySelector('.js-catalog-filter-clear');
 
   function openCatalogFilter () {
     catalogFilter.classList.add('is-open');
@@ -573,33 +572,3 @@ if(scrollBtnUp) {
     })
   })
 }
-
-// const map = document.querySelector('.js-map');
-
-// if(map) {
-
-//   const mapScript = document.createElement("script");
-//   mapScript.src = 'https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU';
-//   document.body.appendChild(mapScript);
-
-//   mapScript.addEventListener("load", () => {
-//     ymaps.ready(function () {
-//       var myMap = new ymaps.Map(map, {
-//         center: [59.938049, 30.318556], // Координаты метки в Санкт-Петербурге
-//         zoom: 13
-//       });
-    
-//       var myPlacemark = new ymaps.Placemark([59.938049, 30.318556], {
-//         hintContent: 'Метка в Санкт-Петербурге'
-//       }, {
-//         iconLayout: 'default#image',
-//         iconImageHref: '../img/icons/map-pin.svg',
-//         iconImageSize: [28, 32],
-//         iconImageOffset: [-14, -14]
-//       });
-    
-//       myMap.geoObjects.add(myPlacemark);
-//     }); 
-//   });
-// }
-
